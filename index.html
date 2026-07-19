@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellow Digi Interactive Media</title>
+    <link rel="icon" type="image/png" href="img/fav.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="pageLoader" class="page-loader" aria-hidden="true">
+        <span class="loader-ring"></span>
+    </div>
+    <noscript><style>.page-loader{display:none!important;}</style></noscript>
+
+    <!-- header -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-shell">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.svg" alt="MellowDigi" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-lg-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mega-dropdown">
+                            <div class="nav-link-row">
+                                <a class="nav-link" href="services.html">Services</a>
+                                <button class="mega-toggle-btn d-lg-none" type="button" aria-expanded="false"
+                                    aria-controls="servicesMegaMenu" aria-label="Toggle Services submenu">
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+                            <div class="mega-menu" id="servicesMegaMenu">
+                                <div class="container-fluid nav-shell">
+                                    <div class="row g-4">
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Photography</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">Wedding &amp; Events</a></li>
+                                                <li><a href="#">Corporate &amp; Industrial</a></li>
+                                                <li><a href="#">Product &amp; Food</a></li>
+                                                <li><a href="#">Fashion</a></li>
+                                                <li><a href="#">Macro</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Video &amp; Production</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">Brand Documentary</a></li>
+                                                <li><a href="#">Wedding &amp; Event</a></li>
+                                                <li><a href="#">Product Videos</a></li>
+                                                <li><a href="#">Promotional Videos</a></li>
+                                                <li><a href="#">Tutorial Videos</a></li>
+                                                <li><a href="#">Interviews</a></li>
+                                                <li><a href="#">Corporate</a></li>
+                                                <li><a href="#">Live Stream Production</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Brand &amp; Advertise</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">Corporate</a></li>
+                                                <li><a href="#">Logo</a></li>
+                                                <li><a href="#">Package</a></li>
+                                                <li><a href="#">Out Door</a></li>
+                                                <li><a href="#">Marketing Material</a></li>
+                                                <li><a href="#">Presentation</a></li>
+                                                <li><a href="#">Product Catalog</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Print</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">Brochures</a></li>
+                                                <li><a href="#">Flyers</a></li>
+                                                <li><a href="#">Business Cards</a></li>
+                                                <li><a href="#">Out Door Posters</a></li>
+                                                <li><a href="#">Wedding &amp; Event Albums</a></li>
+                                                <li><a href="#">Corporate Material</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Web &amp; Mobile</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">UI/UX</a></li>
+                                                <li><a href="#">Development</a></li>
+                                                <li><a href="#">CMS</a></li>
+                                                <li><a href="#">e-commerce</a></li>
+                                                <li><a href="#">Mobile Development</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <h6 class="mega-menu-title">Digital Marketing</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="#">Social Media</a></li>
+                                                <li><a href="#">SEO</a></li>
+                                                <li><a href="#">Campaign Strategy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solutions.html">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clients.html">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <a class="btn-contact" href="contact.html">
+                        Contact
+                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <!--/ header -->
+
+     <!-- main -->
+     <main>
+        <!-- banner-->
+         <section class="banner">
+            <div class="container-fluid nav-shell">
+                <div class="row align-items-center banner-hero">
+                    <div class="col-lg-5">
+                        <p class="eyebrow" data-animate>Digital Solutions &amp; Services</p>
+                        <h1 class="banner-title" data-animate data-delay="120">
+                            We craft <span class="text-gradient-brand">digital experiences</span> that help your brand grow
+                        </h1>
+                        <p class="banner-text max-width-700" data-animate data-delay="220">
+                            From photography and video to branding, print, web development and digital
+                            marketing — MellowDigi is the complete creative team behind ambitious brands.
+                        </p>
+                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
+                    </div>
+                    <div class="col-lg-7 align-self-center">
+                        <div class="service-icon-cycle" data-animate data-delay="200">
+                            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="brandIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#2BACE2"/>
+                                        <stop offset="50%" stop-color="#3DB54A"/>
+                                        <stop offset="100%" stop-color="#F99E1F"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="icon-slide is-default" style="--slot:0">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle pathLength="1" cx="12" cy="13" r="3.5"/></svg>
+                                <span class="cycle-label">Photography</span>
+                            </div>
+                            <div class="icon-slide" style="--slot:1">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><rect pathLength="1" x="3" y="5" width="13" height="14" rx="2"/><path pathLength="1" d="M16 9l5-3v12l-5-3"/></svg>
+                                <span class="cycle-label">Video &amp; Production</span>
+                            </div>
+                            <div class="icon-slide" style="--slot:2">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-.5-1.5-.5-2.3c0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle pathLength="1" cx="7.5" cy="10.5" r="1"/><circle pathLength="1" cx="9.5" cy="7" r="1"/><circle pathLength="1" cx="14.5" cy="7" r="1"/></svg>
+                                <span class="cycle-label">Brand &amp; Advertise</span>
+                            </div>
+                            <div class="icon-slide" style="--slot:3">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M6 9V3h12v6"/><rect pathLength="1" x="3" y="9" width="18" height="8" rx="1.5"/><path pathLength="1" d="M6 15h12v6H6z"/></svg>
+                                <span class="cycle-label">Print</span>
+                            </div>
+                            <div class="icon-slide" style="--slot:4">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><rect pathLength="1" x="3" y="4" width="14" height="10" rx="1.5"/><path pathLength="1" d="M8 20h6M11 14v6"/><rect pathLength="1" x="18" y="9" width="4" height="8" rx="1"/></svg>
+                                <span class="cycle-label">Web &amp; Mobile</span>
+                            </div>
+                            <div class="icon-slide" style="--slot:5">
+                                <svg class="cycle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandIconGradient)" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M3 11v2a2 2 0 0 0 2 2h1l2 5h2l-1-5h1l9 4V7l-9 4H6a2 2 0 0 0-2 2z"/><path pathLength="1" d="M19 9v6"/></svg>
+                                <span class="cycle-label">Digital Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 banner-services">
+                    <div class="col-6 col-lg-2" data-animate data-delay="0">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+                            </span>
+                            <h6>Photography</h6>
+                            <p>Weddings, products, fashion &amp; more — captured beautifully.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2" data-animate data-delay="60">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-3v12l-5-3"/></svg>
+                            </span>
+                            <h6>Video &amp; Production</h6>
+                            <p>Brand films, promos &amp; live streams, shot to edited.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2" data-animate data-delay="120">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-.5-1.5-.5-2.3c0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="9.5" cy="7" r="1"/><circle cx="14.5" cy="7" r="1"/></svg>
+                            </span>
+                            <h6>Brand &amp; Advertise</h6>
+                            <p>Logos, identity &amp; collateral that stands out.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2" data-animate data-delay="180">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M6 15h12v6H6z"/></svg>
+                            </span>
+                            <h6>Print</h6>
+                            <p>Brochures, cards &amp; posters, designed print-ready.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2" data-animate data-delay="240">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="10" rx="1.5"/><path d="M8 20h6M11 14v6"/><rect x="18" y="9" width="4" height="8" rx="1"/></svg>
+                            </span>
+                            <h6>Web &amp; Mobile</h6>
+                            <p>UI/UX, development &amp; e-commerce built to perform.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2" data-animate data-delay="300">
+                        <div class="service-chip">
+                            <span class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h1l2 5h2l-1-5h1l9 4V7l-9 4H6a2 2 0 0 0-2 2z"/><path d="M19 9v6"/></svg>
+                            </span>
+                            <h6>Digital Marketing</h6>
+                            <p>Social, SEO &amp; campaign strategy that drives growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!--/ banner-->
+
+         <!-- who we are-->
+         <section class="who-we-are">
+            <div class="bg-bubble bubble-blue" aria-hidden="true"></div>
+            <div class="bg-bubble bubble-green" aria-hidden="true"></div>
+            <div class="bg-bubble bubble-orange" aria-hidden="true"></div>
+            <div class="container-fluid nav-shell">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <p class="eyebrow" data-animate>Who We Are</p>
+                        <h2 class="section-heading" data-animate data-delay="100">
+                            We are a team of passionate digital creators and problem solvers
+                        </h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="who-text" data-animate data-delay="200">
+                            MellowDigi brings photographers, video producers, designers and developers
+                            together under one roof. Every project is handled by specialists who care
+                            about the details, so your brand shows up consistently everywhere it matters.
+                        </p>
+                        <p class="who-text" data-animate data-delay="280">
+                            From the first brief to the final delivery, we work closely with you at every
+                            step — because the best results come from a real partnership, not a hand-off.
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="who-stat" data-animate data-delay="360">
+                            <h3>25+</h3>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="who-stat" data-animate data-delay="440">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="who-stat" data-animate data-delay="520">
+                            <h3>7+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!--/ who we are-->
+
+         <!-- recent projects-->
+          <section class="recent-projects-section">
+            <div class="container-fluid nav-shell">
+                <div class="row align-items-end">
+                     <div class="col-lg-6" data-animate>
+                        <p class="eyebrow">Portfolio</p>
+                        <h2 class="section-heading">Recent Projects</h2>
+                    </div>
+                    <div class="col-lg-6" data-animate data-delay="100">
+                        <p class="recent-projects-intro">
+                            We've helped ambitious brands and businesses grow with thoughtful design
+                            and reliable execution. Here's a look at some of MellowDigi's recent work.
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="projects-swiper swiper-container" data-animate data-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide project-card">
+                        <img src="img/recent-projects/home_1.jpg" alt="Kepler — Brand &amp; Advertise" loading="lazy">
+                        <div class="project-card-overlay">
+                            <h6>Kepler</h6>
+                            <p>Brand &amp; Advertise</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project-card">
+                        <img src="img/recent-projects/home_2.jpg" alt="Vitoria University — Brand &amp; Advertise" loading="lazy">
+                        <div class="project-card-overlay">
+                            <h6>Vitoria University</h6>
+                            <p>Brand &amp; Advertise</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project-card">
+                        <img src="img/recent-projects/home_3.jpg" alt="Oreva Fashion — Brand &amp; Advertise" loading="lazy">
+                        <div class="project-card-overlay">
+                            <h6>Oreva Fashion</h6>
+                            <p>Brand &amp; Advertise</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project-card">
+                        <img src="img/recent-projects/home_4.jpg" alt="Migro Logistics — Brand &amp; Advertise" loading="lazy">
+                        <div class="project-card-overlay">
+                            <h6>Migro Logistics</h6>
+                            <p>Brand &amp; Advertise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+          </section>
+          <!--/ recent projects-->
+
+           <!-- startup-->
+           <section class="home_startup">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6 startup-image" data-animate>
+                    <img src="img/startup.jpg" alt="Startup team collaborating in the office">
+                </div>
+                <div class="col-lg-6 startup-content">
+                    <div class="startup-content-inner">
+                        <h2 class="startup-heading" data-animate>Are you a startup?</h2>
+                        <h3 class="startup-subheading" data-animate data-delay="80">We help startups launch faster</h3>
+                        <p class="startup-text" data-animate data-delay="160">
+                            Building a company from scratch is hard enough — your brand, website and
+                            marketing shouldn't be what holds you back. MellowDigi partners with
+                            early-stage teams to turn a rough idea into a polished, professional
+                            presence, fast.
+                        </p>
+                        <p class="startup-text" data-animate data-delay="220">
+                            From your first logo to a fully launched website and go-to-market campaign,
+                            we handle the creative and technical heavy lifting so you can stay focused
+                            on building your product and talking to customers.
+                        </p>
+                        <p class="startup-why" data-animate data-delay="260">Why startups choose MellowDigi</p>
+                        <ul class="startup-checklist" data-animate data-delay="300">
+                            <li>Fast turnaround — most startup packages ship in weeks, not months</li>
+                            <li>One team for branding, web &amp; marketing, so nothing falls through the cracks</li>
+                            <li>Pricing that fits early-stage budgets and scales as you grow</li>
+                            <li>Direct access to your project team, from kickoff to launch</li>
+                        </ul>
+                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="360">Let's Talk About Your Startup</a>
+                    </div>
+                </div>
+            </div>
+           </section>
+           <!--/ startup-->
+
+           <!-- popular services -->
+           <section class="popular-services-section">
+            <div class="container-fluid nav-shell">
+                <div class="row mb-5">
+                    <div class="col-lg-7" data-animate>
+                        <p class="eyebrow">Popular Services</p>
+                        <h2 class="section-heading">Explore our most requested services</h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="0">
+                        <div class="popular-service-card" style="--accent:#2BACE2">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+                            </span>
+                            <h6>Wedding &amp; Events</h6>
+                            <p>Candid, cinematic coverage of your big day, from ceremony to reception.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="70">
+                        <div class="popular-service-card" style="--accent:#3DB54A">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+                            </span>
+                            <h6>Corporate &amp; Industrial</h6>
+                            <p>Professional photography for offices, facilities and industrial sites.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="140">
+                        <div class="popular-service-card" style="--accent:#F99E1F">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 8l9-5 9 5"/><path d="M12 3v17"/></svg>
+                            </span>
+                            <h6>Product &amp; Food</h6>
+                            <p>Crisp product and food photography that makes every shot shelf-ready.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="210">
+                        <div class="popular-service-card" style="--accent:#8B5CF6">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l1.5-3h3L6 8"/><path d="M9 8l1.5-3h3L12 8"/><path d="M15 8l1.5-3h3L18 8"/><rect x="3" y="8" width="18" height="12" rx="1.5"/></svg>
+                            </span>
+                            <h6>Video Editing</h6>
+                            <p>Polished cuts, color grading and sound design for every kind of video.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="0">
+                        <div class="popular-service-card" style="--accent:#F43F5E">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+                            </span>
+                            <h6>Logo Designing</h6>
+                            <p>A distinctive mark that captures your brand's personality at a glance.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="70">
+                        <div class="popular-service-card" style="--accent:#14B8A6">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-.5-1.5-.5-2.3c0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="9.5" cy="7" r="1"/><circle cx="14.5" cy="7" r="1"/></svg>
+                            </span>
+                            <h6>Corporate Branding</h6>
+                            <p>Consistent visual identity systems built to scale across every touchpoint.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="140">
+                        <div class="popular-service-card" style="--accent:#2BACE2">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.5-1.2-4-2-7-2v13c3 0 5.5.8 7 2 1.5-1.2 4-2 7-2V4c-3 0-5.5.8-7 2z"/><path d="M12 6v13"/></svg>
+                            </span>
+                            <h6>Product Catalog</h6>
+                            <p>Organized, on-brand catalogs that make your products easy to browse.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="210">
+                        <div class="popular-service-card" style="--accent:#3DB54A">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M6 15h12v6H6z"/></svg>
+                            </span>
+                            <h6>Brochures Print</h6>
+                            <p>Print-ready brochures designed to inform and convert at first glance.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="0">
+                        <div class="popular-service-card" style="--accent:#F99E1F">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M14 10h5M14 14h5"/></svg>
+                            </span>
+                            <h6>Business Cards</h6>
+                            <p>Memorable business cards that make a strong first impression.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="70">
+                        <div class="popular-service-card" style="--accent:#8B5CF6">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="10" rx="1"/><path d="M12 14v6M9 20h6"/></svg>
+                            </span>
+                            <h6>Out Door Posters</h6>
+                            <p>Bold outdoor posters designed to stand out and get noticed.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="140">
+                        <div class="popular-service-card" style="--accent:#F43F5E">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="13" height="13" rx="1.5"/><path d="M8 20h13V7"/></svg>
+                            </span>
+                            <h6>Wedding &amp; Event Albums</h6>
+                            <p>Beautifully printed albums that turn your best moments into keepsakes.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="210">
+                        <div class="popular-service-card" style="--accent:#14B8A6">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+                            </span>
+                            <h6>UI/UX</h6>
+                            <p>Intuitive interfaces and user flows designed around real customer needs.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="0">
+                        <div class="popular-service-card" style="--accent:#2BACE2">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6L2 12l6 6M16 6l6 6-6 6"/></svg>
+                            </span>
+                            <h6>Web Development</h6>
+                            <p>Fast, reliable websites built clean, and ready to scale.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="70">
+                        <div class="popular-service-card" style="--accent:#3DB54A">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+                            </span>
+                            <h6>Mobile Development</h6>
+                            <p>Native and cross-platform apps built for performance and delight.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-animate data-delay="140">
+                        <div class="popular-service-card" style="--accent:#F99E1F">
+                            <span class="popular-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="M8 11l8-4M8 13l8 4"/></svg>
+                            </span>
+                            <h6>Social Media</h6>
+                            <p>Scroll-stopping content and strategy that grows your audience.</p>
+                            <a href="services.html" class="popular-service-link">Learn more <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+            <!--/ popular services-->
+
+            <!-- bottom Testimonials -->
+            <section class="testimonials-section">
+                <div class="container-fluid nav-shell">
+                    <div class="row mb-5">
+                        <div class="col-lg-7" data-animate>
+                            <p class="eyebrow">Testimonials</p>
+                            <h2 class="section-heading">What our clients say</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-swiper swiper-container" data-animate data-delay="150">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#2BACE2">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    MellowDigi took our brand from a rough sketch to something we're proud
+                                    to put in front of customers every day. They understood exactly what we
+                                    needed before we could even explain it.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">SM</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Sarah Mitchell</h6>
+                                        <span>Founder, Oreva Fashion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#3DB54A">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    The print materials they designed for our launch looked incredible and
+                                    arrived right on schedule. Working with one team for everything made
+                                    the whole process painless.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">JC</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>James Carter</h6>
+                                        <span>Marketing Lead, Migro Logistics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#F99E1F">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    Our new website has completely changed how prospective students see
+                                    us. Fast, responsive, and genuinely easy for our own team to update.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">AR</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Aisha Rahman</h6>
+                                        <span>CEO, Vitoria University</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#8B5CF6">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    As a startup, speed mattered as much as quality. MellowDigi delivered
+                                    both — our brand and site were ready in weeks, not months.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">DO</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Daniel Ortiz</h6>
+                                        <span>Co-founder, Kepler</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#F43F5E">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    The photos from our product shoot were stunning. Every detail felt
+                                    considered, and they made a stressful shoot day feel effortless.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">PN</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Priya Nair</h6>
+                                        <span>Owner, Studio Bloom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#14B8A6">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    From concept to final cut, the video team nailed our brand's tone. The
+                                    final piece exceeded what we imagined for the launch.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">MW</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Marcus Webb</h6>
+                                        <span>Director, Northgate Films</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" style="--accent:#2BACE2">
+                                <span class="testimonial-quote-icon">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
+                                </span>
+                                <div class="testimonial-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                                </div>
+                                <p class="testimonial-text">
+                                    Our social engagement has grown steadily every month since we started
+                                    working together. Clear reporting, real strategy, real results.
+                                </p>
+                                <div class="testimonial-author">
+                                    <span class="testimonial-avatar">ET</span>
+                                    <div class="testimonial-author-info">
+                                        <h6>Elena Torres</h6>
+                                        <span>Growth Manager, Loop Retail</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <!--/ bottom Testimonials -->
+     </main>
+     <!--/ main -->
+
+     <!-- footer -->
+     <footer class="site-footer">
+        <div class="bg-bubble bubble-blue" aria-hidden="true"></div>
+        <div class="bg-bubble bubble-orange" aria-hidden="true"></div>
+        <div class="container-fluid nav-shell footer-top">
+            <div class="row g-4">
+                <div class="col-lg-4" data-animate>
+                    <a href="index.html" class="footer-brand">
+                        <img src="img/logo.svg" alt="MellowDigi" class="footer-logo">
+                    </a>
+                    <p class="footer-about">
+                        A full-service creative team covering photography, video, branding, print,
+                        web &amp; mobile and digital marketing — everything a growing brand needs,
+                        under one roof.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2a5 5 0 0 0-5 5v3H6v4h2v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4.5" r="2"/><path d="M11 9v12M11 13c0-2.2 1.8-4 4-4s4 1.8 4 4v8"/></svg></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2" data-animate data-delay="80">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2" data-animate data-delay="140">
+                    <h6 class="footer-heading">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Photography</a></li>
+                        <li><a href="services.html">Video &amp; Production</a></li>
+                        <li><a href="services.html">Brand &amp; Advertise</a></li>
+                        <li><a href="services.html">Print</a></li>
+                        <li><a href="services.html">Web &amp; Mobile</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" data-animate data-delay="200">
+                    <h6 class="footer-heading">Get in Touch</h6>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            <span>4th Floor, Tech Park Avenue, Bengaluru, India</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5a2 2 0 0 1 2-2h2l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v2a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6.5l9 6 9-6"/></svg>
+                            <span>hello@mellowdigi.com</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-hero-cta footer-cta">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-fluid nav-shell footer-bottom-inner">
+                <p>&copy; 2026 MellowDigi. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+     </footer>
+     <!--/ footer -->
+
+     <!-- floating actions -->
+     <a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.3c-.2.6-1.2 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.5 1.5.2.1.4.1.5-.1.2-.2.7-.8.9-1 .2-.2.3-.2.6-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+     </a>
+     <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+     </button>
+
+     <script src="js/jquery-4.0.0.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/swiper.min.js"></script>
+     <script src="js/script.js"></script>
+
+</body>
+</html>
