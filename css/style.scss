@@ -1472,3 +1472,70 @@ h1, h2, h3, .navbar-brand {
 @media (prefers-reduced-motion: reduce) {
     .whatsapp-float { animation: none; }
 }
+
+/* ==========================================================================
+   Founder spotlight
+   ========================================================================== */
+.founder-section {
+    position: relative;
+    overflow: hidden;
+    background-color: $header-bg;
+    padding: 100px 0;
+
+    @include tablet { padding: 60px 0; }
+
+    .nav-shell { position: relative; z-index: 1; }
+}
+
+.founder-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2BACE2, #3DB54A, #F99E1F);
+    color: $white;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    @include tablet {
+        width: 120px;
+        height: 120px;
+        font-size: 2.2rem;
+        margin-bottom: 24px;
+    }
+}
+
+.founder-role {
+    color: $secondary;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.founder-bio {
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+    max-width: 680px;
+    margin-bottom: 24px;
+}
+
+.founder-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    @include transition($transition-smooth);
+
+    &:hover {
+        background: $secondary;
+        border-color: $secondary;
+    }
+}

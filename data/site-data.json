@@ -56,6 +56,18 @@
         { "number": "500+", "label": "Happy Clients" },
         { "number": "7+", "label": "Years of Experience" }
     ],
+    "values": [
+        { "accent": "#F99E1F", "title": "Craft over shortcuts", "description": "We'd rather do fewer things exceptionally well than chase every trend. Every project gets the same level of care, whether it's a five-page website or a full brand relaunch." },
+        { "accent": "#2BACE2", "title": "Partnership over transactions", "description": "We work alongside our clients, not just for them. The best outcomes come from real collaboration, honest feedback, and staying involved long after the first deliverable ships." },
+        { "accent": "#3DB54A", "title": "Clarity over jargon", "description": "Good creative work should be easy to understand and easy to act on. We explain our thinking in plain language and keep every project transparent from kickoff to launch." },
+        { "accent": "#8B5CF6", "title": "Results over vanity metrics", "description": "Beautiful work that doesn't move the needle isn't good work. We measure success by what it does for your business, not just how it looks in a portfolio." }
+    ],
+    "founder": {
+        "initials": "PG",
+        "name": "Praveen Guptha",
+        "role": "Founder, MellowDigi",
+        "bio": "Praveen Guptha founded MellowDigi with a simple belief: great design and dependable execution shouldn't be mutually exclusive. With a background spanning brand strategy, digital production and technology, he's spent his career helping businesses of every size — from ambitious startups to established enterprises — turn ideas into work that actually performs. Today he leads MellowDigi's team of creators, developers and strategists, and stays hands-on with the projects and people that make the studio what it is."
+    },
     "recentProjects": [
         { "image": "img/recent-projects/home_1.jpg", "title": "Kepler", "category": "Brand Strategy &amp; Identity" },
         { "image": "img/recent-projects/home_2.jpg", "title": "Vitoria University", "category": "Brand Strategy &amp; Identity" },
