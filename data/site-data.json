@@ -28,12 +28,51 @@
         "linkedin": "<rect x=\"3\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"5\" cy=\"4.5\" r=\"2\"/><path d=\"M11 9v12M11 13c0-2.2 1.8-4 4-4s4 1.8 4 4v8\"/>"
     },
     "megaMenu": [
-        { "title": "Brand Strategy & Identity", "items": ["Corporate Branding & Identity", "Logo Design & Visual Systems", "Packaging Design", "Outdoor & Environmental Graphics", "Marketing Collateral (Brochures, Flyers, Business Cards)", "Presentation Design", "Product Catalog Development"] },
-        { "title": "Digital Marketing & Growth", "items": ["Social Media Marketing & Management", "Search Engine Optimization (SEO)", "Campaign Strategy & Execution"] },
-        { "title": "Web & Mobile Solutions", "items": ["UI/UX Design & Prototyping", "Custom Web Development", "CMS Integration (WordPress, Shopify, etc.)", "E-Commerce Development", "Mobile App Development (iOS & Android)"] },
-        { "title": "Photography", "items": ["Wedding & Events Photography", "Corporate & Industrial Photography", "Product & Food Photography", "Fashion & Editorial Photography", "Macro & Detail Photography"] },
-        { "title": "Video & Motion Production", "items": ["Brand Documentaries & Storytelling", "Wedding & Event Cinematography", "Product Demo & Explainer Videos", "Promotional & Commercial Videos", "Tutorial & Educational Content", "Corporate & Executive Interviews", "Live Stream Production", "Professional Video Editing & Post-Production"] },
-        { "title": "Print & Physical Media", "items": ["Business Cards & Stationery", "Brochures & Flyers", "Outdoor Posters & Banners", "Wedding & Event Albums", "Corporate Print Materials"] }
+        { "title": "Brand Strategy & Identity", "items": [
+            { "label": "Corporate Branding & Identity", "url": "corporate-branding.php" },
+            { "label": "Logo Design & Visual Systems", "url": "#" },
+            { "label": "Packaging Design", "url": "#" },
+            { "label": "Outdoor & Environmental Graphics", "url": "#" },
+            { "label": "Marketing Collateral (Brochures, Flyers, Business Cards)", "url": "#" },
+            { "label": "Presentation Design", "url": "#" },
+            { "label": "Product Catalog Development", "url": "#" }
+        ] },
+        { "title": "Digital Marketing & Growth", "items": [
+            { "label": "Social Media Marketing & Management", "url": "#" },
+            { "label": "Search Engine Optimization (SEO)", "url": "#" },
+            { "label": "Campaign Strategy & Execution", "url": "#" }
+        ] },
+        { "title": "Web & Mobile Solutions", "items": [
+            { "label": "UI/UX Design & Prototyping", "url": "#" },
+            { "label": "Custom Web Development", "url": "#" },
+            { "label": "CMS Integration (WordPress, Shopify, etc.)", "url": "#" },
+            { "label": "E-Commerce Development", "url": "#" },
+            { "label": "Mobile App Development (iOS & Android)", "url": "#" }
+        ] },
+        { "title": "Photography", "items": [
+            { "label": "Wedding & Events Photography", "url": "#" },
+            { "label": "Corporate & Industrial Photography", "url": "#" },
+            { "label": "Product & Food Photography", "url": "#" },
+            { "label": "Fashion & Editorial Photography", "url": "#" },
+            { "label": "Macro & Detail Photography", "url": "#" }
+        ] },
+        { "title": "Video & Motion Production", "items": [
+            { "label": "Brand Documentaries & Storytelling", "url": "#" },
+            { "label": "Wedding & Event Cinematography", "url": "#" },
+            { "label": "Product Demo & Explainer Videos", "url": "#" },
+            { "label": "Promotional & Commercial Videos", "url": "#" },
+            { "label": "Tutorial & Educational Content", "url": "#" },
+            { "label": "Corporate & Executive Interviews", "url": "#" },
+            { "label": "Live Stream Production", "url": "#" },
+            { "label": "Professional Video Editing & Post-Production", "url": "#" }
+        ] },
+        { "title": "Print & Physical Media", "items": [
+            { "label": "Business Cards & Stationery", "url": "#" },
+            { "label": "Brochures & Flyers", "url": "#" },
+            { "label": "Outdoor Posters & Banners", "url": "#" },
+            { "label": "Wedding & Event Albums", "url": "#" },
+            { "label": "Corporate Print Materials", "url": "#" }
+        ] }
     ],
     "heroIconCycle": [
         { "icon": "palette", "label": "Brand Strategy & Identity" },

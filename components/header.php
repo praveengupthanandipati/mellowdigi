@@ -119,7 +119,7 @@ $esc = function ($value) {
                                             <a href="services.html" class="mega-menu-title"><?php echo $esc($category['title']); ?></a>
                                             <ul class="mega-menu-list">
                                                 <?php foreach ($category['items'] as $item): ?>
-                                                <li><a href="#"><?php echo $esc($item); ?></a></li>
+                                                <li><a href="<?php echo $esc($item['url']); ?>"><?php echo $esc($item['label']); ?></a></li>
                                                 <?php endforeach; ?>
                                             </ul>
                                         </div>

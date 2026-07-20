@@ -1030,7 +1030,6 @@ h1, h2, h3, .navbar-brand {
         font-size: 0.85rem;
         line-height: 1.6;
         margin-bottom: 16px;
-        flex-grow: 1;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         line-clamp: 2;
@@ -1537,5 +1536,75 @@ h1, h2, h3, .navbar-brand {
     &:hover {
         background: $secondary;
         border-color: $secondary;
+    }
+}
+
+/* ==========================================================================
+   Process steps
+   ========================================================================== */
+.process-step {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    @include transition($transition-smooth);
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: $secondary;
+    }
+
+    .process-step-number {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #2BACE2, #3DB54A, #F99E1F);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 14px;
+    }
+
+    h6 {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+/* ==========================================================================
+   Audience pills
+   ========================================================================== */
+.audience-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.audience-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    @include transition($transition-smooth);
+
+    &:hover {
+        border-color: $secondary;
+        color: $white;
     }
 }
