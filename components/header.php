@@ -101,7 +101,7 @@ $esc = function ($value) {
                             <a class="nav-link active" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item mega-dropdown">
                             <div class="nav-link-row">
@@ -116,7 +116,7 @@ $esc = function ($value) {
                                     <div class="row g-4">
                                         <?php foreach ($siteData['megaMenu'] as $category): ?>
                                         <div class="col-6 col-lg-2">
-                                            <h6 class="mega-menu-title"><?php echo $esc($category['title']); ?></h6>
+                                            <a href="services.html" class="mega-menu-title"><?php echo $esc($category['title']); ?></a>
                                             <ul class="mega-menu-list">
                                                 <?php foreach ($category['items'] as $item): ?>
                                                 <li><a href="#"><?php echo $esc($item); ?></a></li>

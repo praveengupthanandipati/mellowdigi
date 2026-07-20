@@ -49,13 +49,13 @@ include __DIR__ . '/components/header.php';
                 <div class="row g-4 banner-services">
                     <?php foreach ($siteData['bannerServices'] as $i => $service): ?>
                     <div class="col-6 col-lg-2" data-animate data-delay="<?php echo $i * 60; ?>">
-                        <div class="service-chip">
+                        <a href="services.html" class="service-chip">
                             <span class="service-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><?php echo $siteData['icons'][$service['icon']]; ?></svg>
                             </span>
                             <h6><?php echo $service['title']; ?></h6>
                             <p><?php echo $service['description']; ?></p>
-                        </div>
+                        </a>
                     </div>
                     <?php endforeach; ?>
                 </div>

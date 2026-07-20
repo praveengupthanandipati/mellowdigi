@@ -245,12 +245,20 @@ h1, h2, h3, .navbar-brand {
     transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, padding 0.4s ease;
 
     .mega-menu-title {
+        display: inline-block;
         color: $secondary;
         font-size: 0.8rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-bottom: 16px;
+        text-decoration: none;
+        @include transition($transition-smooth);
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
     }
 
     .mega-menu-list {
@@ -258,18 +266,23 @@ h1, h2, h3, .navbar-brand {
         margin: 0;
         padding: 0;
 
-        li { margin-bottom: 10px; }
+        li { margin-bottom: 8px; }
 
         a {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             color: rgba(255, 255, 255, 0.65);
             font-size: 0.9rem;
             text-decoration: none;
-            display: inline-block;
             @include transition($transition-smooth);
 
             &:hover {
                 color: $white;
-                padding-left: 4px;
+                background: rgba(255, 255, 255, 0.08);
+                border-color: rgba(255, 255, 255, 0.18);
             }
         }
     }
@@ -591,7 +604,11 @@ h1, h2, h3, .navbar-brand {
 }
 
 .service-chip {
+    display: block;
     height: 100%;
+    text-decoration: none;
+    color: inherit;
+    @include transition($transition-smooth);
 
     .service-icon {
         display: inline-flex;
@@ -603,6 +620,7 @@ h1, h2, h3, .navbar-brand {
         background: rgba(43, 172, 226, 0.12);
         color: $secondary;
         margin-bottom: 14px;
+        @include transition($transition-smooth);
 
         svg { width: 22px; height: 22px; }
     }
@@ -619,6 +637,16 @@ h1, h2, h3, .navbar-brand {
         font-size: 0.85rem;
         line-height: 1.5;
         margin-bottom: 0;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        color: inherit;
+
+        .service-icon {
+            background: $secondary;
+            color: $white;
+        }
     }
 }
 
@@ -672,7 +700,11 @@ h1, h2, h3, .navbar-brand {
 }
 
 .section-heading {
-    color: $white;
+    background: linear-gradient(90deg, #2BACE2 0%, #3DB54A 50%, #F99E1F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.3;

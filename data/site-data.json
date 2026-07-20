@@ -18,6 +18,7 @@
         "codebrackets": "<path pathLength=\"1\" d=\"M8 6L2 12l6 6M16 6l6 6-6 6\"/>",
         "phone": "<rect pathLength=\"1\" x=\"7\" y=\"2\" width=\"10\" height=\"20\" rx=\"2\"/><path pathLength=\"1\" d=\"M11 18h2\"/>",
         "network": "<circle pathLength=\"1\" cx=\"6\" cy=\"12\" r=\"2.2\"/><circle pathLength=\"1\" cx=\"18\" cy=\"6\" r=\"2.2\"/><circle pathLength=\"1\" cx=\"18\" cy=\"18\" r=\"2.2\"/><path pathLength=\"1\" d=\"M8 11l8-4M8 13l8 4\"/>",
+        "search": "<circle pathLength=\"1\" cx=\"10\" cy=\"10\" r=\"6.5\"/><path pathLength=\"1\" d=\"M19.5 19.5L15 15\"/>",
         "pin": "<path d=\"M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/>",
         "call": "<path d=\"M3 5a2 2 0 0 1 2-2h2l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v2a2 2 0 0 1-2 2A16 16 0 0 1 3 5z\"/>",
         "mail": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 6.5l9 6 9-6\"/>",
@@ -27,28 +28,28 @@
         "linkedin": "<rect x=\"3\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"5\" cy=\"4.5\" r=\"2\"/><path d=\"M11 9v12M11 13c0-2.2 1.8-4 4-4s4 1.8 4 4v8\"/>"
     },
     "megaMenu": [
-        { "title": "Photography", "items": ["Wedding & Events", "Corporate & Industrial", "Product & Food", "Fashion", "Macro"] },
-        { "title": "Video & Production", "items": ["Brand Documentary", "Wedding & Event", "Product Videos", "Promotional Videos", "Tutorial Videos", "Interviews", "Corporate", "Live Stream Production", "Video Editing"] },
-        { "title": "Brand & Advertise", "items": ["Corporate", "Logo", "Package", "Out Door", "Marketing Material", "Presentation", "Product Catalog"] },
-        { "title": "Print", "items": ["Brochures", "Flyers", "Business Cards", "Out Door Posters", "Wedding & Event Albums", "Corporate Material"] },
-        { "title": "Web & Mobile", "items": ["UI/UX", "Development", "CMS", "e-commerce", "Mobile Development"] },
-        { "title": "Digital Marketing", "items": ["Social Media", "SEO", "Campaign Strategy"] }
+        { "title": "Brand Strategy & Identity", "items": ["Corporate Branding & Identity", "Logo Design & Visual Systems", "Packaging Design", "Outdoor & Environmental Graphics", "Marketing Collateral (Brochures, Flyers, Business Cards)", "Presentation Design", "Product Catalog Development"] },
+        { "title": "Digital Marketing & Growth", "items": ["Social Media Marketing & Management", "Search Engine Optimization (SEO)", "Campaign Strategy & Execution"] },
+        { "title": "Web & Mobile Solutions", "items": ["UI/UX Design & Prototyping", "Custom Web Development", "CMS Integration (WordPress, Shopify, etc.)", "E-Commerce Development", "Mobile App Development (iOS & Android)"] },
+        { "title": "Photography", "items": ["Wedding & Events Photography", "Corporate & Industrial Photography", "Product & Food Photography", "Fashion & Editorial Photography", "Macro & Detail Photography"] },
+        { "title": "Video & Motion Production", "items": ["Brand Documentaries & Storytelling", "Wedding & Event Cinematography", "Product Demo & Explainer Videos", "Promotional & Commercial Videos", "Tutorial & Educational Content", "Corporate & Executive Interviews", "Live Stream Production", "Professional Video Editing & Post-Production"] },
+        { "title": "Print & Physical Media", "items": ["Business Cards & Stationery", "Brochures & Flyers", "Outdoor Posters & Banners", "Wedding & Event Albums", "Corporate Print Materials"] }
     ],
     "heroIconCycle": [
+        { "icon": "palette", "label": "Brand Strategy & Identity" },
+        { "icon": "megaphone", "label": "Digital Marketing & Growth" },
+        { "icon": "webmobile", "label": "Web & Mobile Solutions" },
         { "icon": "camera", "label": "Photography" },
-        { "icon": "video", "label": "Video & Production" },
-        { "icon": "palette", "label": "Brand & Advertise" },
-        { "icon": "printer", "label": "Print" },
-        { "icon": "webmobile", "label": "Web & Mobile" },
-        { "icon": "megaphone", "label": "Digital Marketing" }
+        { "icon": "video", "label": "Video & Motion Production" },
+        { "icon": "printer", "label": "Print & Physical Media" }
     ],
     "bannerServices": [
+        { "icon": "palette", "title": "Brand Strategy &amp; Identity", "description": "Identity systems, packaging &amp; collateral that define your brand." },
+        { "icon": "megaphone", "title": "Digital Marketing &amp; Growth", "description": "Social, SEO &amp; campaign strategy that drives real growth." },
+        { "icon": "webmobile", "title": "Web &amp; Mobile Solutions", "description": "UI/UX, development &amp; apps built to perform." },
         { "icon": "camera", "title": "Photography", "description": "Weddings, products, fashion &amp; more — captured beautifully." },
-        { "icon": "video", "title": "Video &amp; Production", "description": "Brand films, promos &amp; live streams, shot to edited." },
-        { "icon": "palette", "title": "Brand &amp; Advertise", "description": "Logos, identity &amp; collateral that stands out." },
-        { "icon": "printer", "title": "Print", "description": "Brochures, cards &amp; posters, designed print-ready." },
-        { "icon": "webmobile", "title": "Web &amp; Mobile", "description": "UI/UX, development &amp; e-commerce built to perform." },
-        { "icon": "megaphone", "title": "Digital Marketing", "description": "Social, SEO &amp; campaign strategy that drives growth." }
+        { "icon": "video", "title": "Video &amp; Motion Production", "description": "Brand films, promos &amp; live streams, shot to edited." },
+        { "icon": "printer", "title": "Print &amp; Physical Media", "description": "Business cards, brochures &amp; posters, designed print-ready." }
     ],
     "whoWeAreStats": [
         { "number": "25+", "label": "Team Members" },
@@ -56,27 +57,27 @@
         { "number": "7+", "label": "Years of Experience" }
     ],
     "recentProjects": [
-        { "image": "img/recent-projects/home_1.jpg", "title": "Kepler", "category": "Brand &amp; Advertise" },
-        { "image": "img/recent-projects/home_2.jpg", "title": "Vitoria University", "category": "Brand &amp; Advertise" },
-        { "image": "img/recent-projects/home_3.jpg", "title": "Oreva Fashion", "category": "Brand &amp; Advertise" },
-        { "image": "img/recent-projects/home_4.jpg", "title": "Migro Logistics", "category": "Brand &amp; Advertise" }
+        { "image": "img/recent-projects/home_1.jpg", "title": "Kepler", "category": "Brand Strategy &amp; Identity" },
+        { "image": "img/recent-projects/home_2.jpg", "title": "Vitoria University", "category": "Brand Strategy &amp; Identity" },
+        { "image": "img/recent-projects/home_3.jpg", "title": "Oreva Fashion", "category": "Brand Strategy &amp; Identity" },
+        { "image": "img/recent-projects/home_4.jpg", "title": "Migro Logistics", "category": "Brand Strategy &amp; Identity" }
     ],
     "popularServices": [
-        { "accent": "#2BACE2", "icon": "camera", "title": "Wedding &amp; Events", "description": "Candid, cinematic coverage of your big day, from ceremony to reception.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "briefcase", "title": "Corporate &amp; Industrial", "description": "Professional photography for offices, facilities and industrial sites.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "box", "title": "Product &amp; Food", "description": "Crisp product and food photography that makes every shot shelf-ready.", "link": "services.html" },
-        { "accent": "#8B5CF6", "icon": "clapperboard", "title": "Video Editing", "description": "Polished cuts, color grading and sound design for every kind of video.", "link": "services.html" },
-        { "accent": "#F43F5E", "icon": "pencil", "title": "Logo Designing", "description": "A distinctive mark that captures your brand's personality at a glance.", "link": "services.html" },
-        { "accent": "#14B8A6", "icon": "palette", "title": "Corporate Branding", "description": "Consistent visual identity systems built to scale across every touchpoint.", "link": "services.html" },
-        { "accent": "#2BACE2", "icon": "book", "title": "Product Catalog", "description": "Organized, on-brand catalogs that make your products easy to browse.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "printer", "title": "Brochures Print", "description": "Print-ready brochures designed to inform and convert at first glance.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "idcard", "title": "Business Cards", "description": "Memorable business cards that make a strong first impression.", "link": "services.html" },
-        { "accent": "#8B5CF6", "icon": "billboard", "title": "Out Door Posters", "description": "Bold outdoor posters designed to stand out and get noticed.", "link": "services.html" },
-        { "accent": "#F43F5E", "icon": "photostack", "title": "Wedding &amp; Event Albums", "description": "Beautifully printed albums that turn your best moments into keepsakes.", "link": "services.html" },
-        { "accent": "#14B8A6", "icon": "layout", "title": "UI/UX", "description": "Intuitive interfaces and user flows designed around real customer needs.", "link": "services.html" },
-        { "accent": "#2BACE2", "icon": "codebrackets", "title": "Web Development", "description": "Fast, reliable websites built clean, and ready to scale.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "phone", "title": "Mobile Development", "description": "Native and cross-platform apps built for performance and delight.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "network", "title": "Social Media", "description": "Scroll-stopping content and strategy that grows your audience.", "link": "services.html" }
+        { "accent": "#2BACE2", "icon": "briefcase", "title": "Corporate Branding &amp; Identity", "description": "Cohesive brand identities that make your company instantly recognizable.", "link": "services.html" },
+        { "accent": "#3DB54A", "icon": "pencil", "title": "Logo Design &amp; Visual Systems", "description": "A distinctive mark and visual language built to scale everywhere.", "link": "services.html" },
+        { "accent": "#F99E1F", "icon": "box", "title": "Packaging Design", "description": "Shelf-ready packaging that turns heads and builds brand recall.", "link": "services.html" },
+        { "accent": "#8B5CF6", "icon": "network", "title": "Social Media Marketing &amp; Management", "description": "Scroll-stopping content and community management that grows your audience.", "link": "services.html" },
+        { "accent": "#F43F5E", "icon": "search", "title": "Search Engine Optimization (SEO)", "description": "Technical and content SEO that gets your brand found and ranked.", "link": "services.html" },
+        { "accent": "#14B8A6", "icon": "layout", "title": "UI/UX Design &amp; Prototyping", "description": "Intuitive interfaces and user flows crafted around real behavior.", "link": "services.html" },
+        { "accent": "#2BACE2", "icon": "codebrackets", "title": "Custom Web Development", "description": "Fast, reliable websites engineered to scale with your business.", "link": "services.html" },
+        { "accent": "#3DB54A", "icon": "phone", "title": "Mobile App Development (iOS &amp; Android)", "description": "Native and cross-platform apps built for performance and delight.", "link": "services.html" },
+        { "accent": "#F99E1F", "icon": "camera", "title": "Wedding &amp; Events Photography", "description": "Candid, cinematic coverage of your big day, from ceremony to reception.", "link": "services.html" },
+        { "accent": "#8B5CF6", "icon": "camera", "title": "Product &amp; Food Photography", "description": "Crisp product and food photography that makes every shot shelf-ready.", "link": "services.html" },
+        { "accent": "#F43F5E", "icon": "video", "title": "Brand Documentaries &amp; Storytelling", "description": "Long-form brand films that capture your story and mission.", "link": "services.html" },
+        { "accent": "#14B8A6", "icon": "video", "title": "Promotional &amp; Commercial Videos", "description": "High-impact promo videos built to convert across every channel.", "link": "services.html" },
+        { "accent": "#2BACE2", "icon": "clapperboard", "title": "Professional Video Editing &amp; Post-Production", "description": "Polished cuts, color grading and sound design for every kind of video.", "link": "services.html" },
+        { "accent": "#3DB54A", "icon": "idcard", "title": "Business Cards &amp; Stationery", "description": "Memorable business cards and stationery that leave a lasting impression.", "link": "services.html" },
+        { "accent": "#F99E1F", "icon": "billboard", "title": "Outdoor Posters &amp; Banners", "description": "Bold outdoor posters and banners designed to stand out and get noticed.", "link": "services.html" }
     ],
     "testimonials": [
         { "accent": "#2BACE2", "initials": "SM", "name": "Sarah Mitchell", "role": "Founder, Oreva Fashion", "quote": "MellowDigi took our brand from a rough sketch to something we're proud to put in front of customers every day. They understood exactly what we needed before we could even explain it." },
@@ -98,12 +99,12 @@
             { "label": "Blog", "url": "blog.html" }
         ],
         "services": [
+            { "label": "Brand Strategy &amp; Identity", "url": "services.html" },
+            { "label": "Digital Marketing &amp; Growth", "url": "services.html" },
+            { "label": "Web &amp; Mobile Solutions", "url": "services.html" },
             { "label": "Photography", "url": "services.html" },
-            { "label": "Video &amp; Production", "url": "services.html" },
-            { "label": "Brand &amp; Advertise", "url": "services.html" },
-            { "label": "Print", "url": "services.html" },
-            { "label": "Web &amp; Mobile", "url": "services.html" },
-            { "label": "Digital Marketing", "url": "services.html" }
+            { "label": "Video &amp; Motion Production", "url": "services.html" },
+            { "label": "Print &amp; Physical Media", "url": "services.html" }
         ],
         "socials": [
             { "icon": "instagram", "label": "Instagram", "url": "#" },
