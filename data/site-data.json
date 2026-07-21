@@ -30,7 +30,7 @@
     "megaMenu": [
         { "title": "Brand Strategy & Identity", "items": [
             { "label": "Corporate Branding & Identity", "url": "corporate-branding.php" },
-            { "label": "Logo Design & Visual Systems", "url": "#" },
+            { "label": "Logo Design & Visual Systems", "url": "logodesign-visualsystem.php" },
             { "label": "Packaging Design", "url": "#" },
             { "label": "Outdoor & Environmental Graphics", "url": "#" },
             { "label": "Marketing Collateral (Brochures, Flyers, Business Cards)", "url": "#" },
