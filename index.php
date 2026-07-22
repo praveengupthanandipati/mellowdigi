@@ -105,13 +105,13 @@ include __DIR__ . '/components/header.php';
             <div class="container-fluid nav-shell">
                 <div class="row align-items-end">
                      <div class="col-lg-6" data-animate>
-                        <p class="eyebrow">Portfolio</p>
-                        <h2 class="section-heading">Recent Projects</h2>
+                        <p class="eyebrow">Our Work</p>
+                        <h2 class="section-heading">A Taste of What We Create</h2>
                     </div>
                     <div class="col-lg-6" data-animate data-delay="100">
                         <p class="recent-projects-intro">
-                            We've helped ambitious brands and businesses grow with thoughtful design
-                            and reliable execution. Here's a look at some of MellowDigi's recent work.
+                            We're a young studio building our portfolio one project at a time. Here's a
+                            look at the kind of branding and design work we love to create.
                         </p>
                     </div>
                    
@@ -199,38 +199,27 @@ include __DIR__ . '/components/header.php';
            </section>
             <!--/ popular services-->
 
-            <!-- bottom Testimonials -->
+            <!-- our promise -->
             <section class="testimonials-section">
                 <div class="container-fluid nav-shell">
                     <div class="row mb-5">
                         <div class="col-lg-7" data-animate>
-                            <p class="eyebrow">Testimonials</p>
-                            <h2 class="section-heading">What our clients say</h2>
+                            <p class="eyebrow">Our Promise</p>
+                            <h2 class="section-heading">What working with us looks like</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonials-swiper swiper-container" data-animate data-delay="150">
                     <div class="swiper-wrapper">
-                        <?php foreach ($siteData['testimonials'] as $t): ?>
+                        <?php foreach ($siteData['ourPromises'] as $p): ?>
                         <div class="swiper-slide">
-                            <div class="testimonial-card" style="--accent:<?php echo $esc($t['accent']); ?>">
+                            <div class="testimonial-card" style="--accent:<?php echo $esc($p['accent']); ?>">
                                 <span class="testimonial-quote-icon">
                                     <svg width="34" height="26" viewBox="0 0 34 26" fill="currentColor"><path d="M14.5 0L9 12H15V26H0V13L6 0H14.5ZM33.5 0L28 12H34V26H19V13L25 0H33.5Z"/></svg>
                                 </span>
-                                <div class="testimonial-stars">
-                                    <?php for ($s = 0; $s < 5; $s++): ?>
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
-                                    <?php endfor; ?>
-                                </div>
-                                <p class="testimonial-text"><?php echo $esc($t['quote']); ?></p>
-                                <div class="testimonial-author">
-                                    <span class="testimonial-avatar"><?php echo $esc($t['initials']); ?></span>
-                                    <div class="testimonial-author-info">
-                                        <h6><?php echo $esc($t['name']); ?></h6>
-                                        <span><?php echo $esc($t['role']); ?></span>
-                                    </div>
-                                </div>
+                                <h6><?php echo $esc($p['title']); ?></h6>
+                                <p class="testimonial-text"><?php echo $esc($p['text']); ?></p>
                             </div>
                         </div>
                         <?php endforeach; ?>
@@ -240,7 +229,7 @@ include __DIR__ . '/components/header.php';
                     <div class="swiper-button-next"></div>
                 </div>
             </section>
-            <!--/ bottom Testimonials -->
+            <!--/ our promise -->
      </main>
      <!--/ main -->
 

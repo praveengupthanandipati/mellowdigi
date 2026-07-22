@@ -498,6 +498,29 @@ h1, h2, h3, .navbar-brand {
   animation: drawIcon 18s linear infinite;
   animation-delay: calc(var(--slot, 0) * 3s);
 }
+.service-icon-cycle.single-icon .icon-slide {
+  animation: none;
+  opacity: 1;
+}
+.service-icon-cycle.single-icon .icon-slide .cycle-icon path,
+.service-icon-cycle.single-icon .icon-slide .cycle-icon circle,
+.service-icon-cycle.single-icon .icon-slide .cycle-icon rect {
+  animation: iconDrawLoop 4s ease-in-out infinite;
+}
+@keyframes iconDrawLoop {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  30% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
 .icon-slide .cycle-label {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
@@ -1302,6 +1325,12 @@ h1, h2, h3, .navbar-brand {
   color: var(--accent, #f5811f);
   opacity: 0.6;
   margin-bottom: 14px;
+}
+.testimonial-card h6 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .testimonial-card .testimonial-stars {
   display: flex;

@@ -31,8 +31,8 @@
         { "title": "Brand Strategy & Identity", "items": [
             { "label": "Corporate Branding & Identity", "url": "corporate-branding.php" },
             { "label": "Logo Design & Visual Systems", "url": "logodesign-visualsystem.php" },
-            { "label": "Packaging Design", "url": "#" },
-            { "label": "Outdoor & Environmental Graphics", "url": "#" },
+            { "label": "Packaging Design", "url": "packaging-design.php" },
+            { "label": "Outdoor & Environmental Graphics", "url": "outdoor-environmental-graphics.php" },
             { "label": "Marketing Collateral (Brochures, Flyers, Business Cards)", "url": "#" },
             { "label": "Presentation Design", "url": "#" },
             { "label": "Product Catalog Development", "url": "#" }
@@ -91,9 +91,9 @@
         { "icon": "printer", "title": "Print &amp; Physical Media", "description": "Business cards, brochures &amp; posters, designed print-ready." }
     ],
     "whoWeAreStats": [
-        { "number": "25+", "label": "Team Members" },
-        { "number": "500+", "label": "Happy Clients" },
-        { "number": "7+", "label": "Years of Experience" }
+        { "number": "Full-Service", "label": "Branding, web &amp; marketing under one roof" },
+        { "number": "Founder-Led", "label": "Direct access to the people doing the work" },
+        { "number": "Modern Toolkit", "label": "Current platforms &amp; practices, not legacy playbooks" }
     ],
     "values": [
         { "accent": "#F99E1F", "title": "Craft over shortcuts", "description": "We'd rather do fewer things exceptionally well than chase every trend. Every project gets the same level of care, whether it's a five-page website or a full brand relaunch." },
@@ -105,13 +105,13 @@
         "initials": "PG",
         "name": "Praveen Guptha",
         "role": "Founder, MellowDigi",
-        "bio": "Praveen Guptha founded MellowDigi with a simple belief: great design and dependable execution shouldn't be mutually exclusive. With a background spanning brand strategy, digital production and technology, he's spent his career helping businesses of every size — from ambitious startups to established enterprises — turn ideas into work that actually performs. Today he leads MellowDigi's team of creators, developers and strategists, and stays hands-on with the projects and people that make the studio what it is."
+        "bio": "Praveen Guptha founded MellowDigi with a simple belief: great design and dependable execution shouldn't be mutually exclusive. MellowDigi is a new studio, built from the ground up around brand strategy, digital production and technology — and Praveen stays hands-on with every project, working directly with clients from the first conversation through final delivery."
     },
     "recentProjects": [
-        { "image": "img/recent-projects/home_1.jpg", "title": "Kepler", "category": "Brand Strategy &amp; Identity" },
-        { "image": "img/recent-projects/home_2.jpg", "title": "Vitoria University", "category": "Brand Strategy &amp; Identity" },
-        { "image": "img/recent-projects/home_3.jpg", "title": "Oreva Fashion", "category": "Brand Strategy &amp; Identity" },
-        { "image": "img/recent-projects/home_4.jpg", "title": "Migro Logistics", "category": "Brand Strategy &amp; Identity" }
+        { "image": "img/recent-projects/home_1.jpg", "title": "Startup Brand Identity", "category": "Brand Strategy &amp; Identity — Concept" },
+        { "image": "img/recent-projects/home_2.jpg", "title": "Higher Education Rebrand", "category": "Brand Strategy &amp; Identity — Concept" },
+        { "image": "img/recent-projects/home_3.jpg", "title": "Fashion Brand Identity", "category": "Brand Strategy &amp; Identity — Concept" },
+        { "image": "img/recent-projects/home_4.jpg", "title": "Logistics Brand System", "category": "Brand Strategy &amp; Identity — Concept" }
     ],
     "popularServices": [
         { "accent": "#2BACE2", "icon": "briefcase", "title": "Corporate Branding &amp; Identity", "description": "Cohesive brand identities that make your company instantly recognizable.", "link": "services.html" },
@@ -130,14 +130,13 @@
         { "accent": "#3DB54A", "icon": "idcard", "title": "Business Cards &amp; Stationery", "description": "Memorable business cards and stationery that leave a lasting impression.", "link": "services.html" },
         { "accent": "#F99E1F", "icon": "billboard", "title": "Outdoor Posters &amp; Banners", "description": "Bold outdoor posters and banners designed to stand out and get noticed.", "link": "services.html" }
     ],
-    "testimonials": [
-        { "accent": "#2BACE2", "initials": "SM", "name": "Sarah Mitchell", "role": "Founder, Oreva Fashion", "quote": "MellowDigi took our brand from a rough sketch to something we're proud to put in front of customers every day. They understood exactly what we needed before we could even explain it." },
-        { "accent": "#3DB54A", "initials": "JC", "name": "James Carter", "role": "Marketing Lead, Migro Logistics", "quote": "The print materials they designed for our launch looked incredible and arrived right on schedule. Working with one team for everything made the whole process painless." },
-        { "accent": "#F99E1F", "initials": "AR", "name": "Aisha Rahman", "role": "CEO, Vitoria University", "quote": "Our new website has completely changed how prospective students see us. Fast, responsive, and genuinely easy for our own team to update." },
-        { "accent": "#8B5CF6", "initials": "DO", "name": "Daniel Ortiz", "role": "Co-founder, Kepler", "quote": "As a startup, speed mattered as much as quality. MellowDigi delivered both — our brand and site were ready in weeks, not months." },
-        { "accent": "#F43F5E", "initials": "PN", "name": "Priya Nair", "role": "Owner, Studio Bloom", "quote": "The photos from our product shoot were stunning. Every detail felt considered, and they made a stressful shoot day feel effortless." },
-        { "accent": "#14B8A6", "initials": "MW", "name": "Marcus Webb", "role": "Director, Northgate Films", "quote": "From concept to final cut, the video team nailed our brand's tone. The final piece exceeded what we imagined for the launch." },
-        { "accent": "#2BACE2", "initials": "ET", "name": "Elena Torres", "role": "Growth Manager, Loop Retail", "quote": "Our social engagement has grown steadily every month since we started working together. Clear reporting, real strategy, real results." }
+    "ourPromises": [
+        { "accent": "#2BACE2", "title": "Direct Access, No Middlemen", "text": "You work with the person actually doing the work — usually the founder — not an account manager relaying messages back and forth." },
+        { "accent": "#3DB54A", "title": "Honest Timelines", "text": "We'd rather give you a realistic delivery date than a fast one we can't keep. What we promise is what you get." },
+        { "accent": "#F99E1F", "title": "Pricing That Fits Where You Are", "text": "Early-stage budgets get early-stage pricing, with room to scale as your needs — and ours — grow." },
+        { "accent": "#8B5CF6", "title": "One Team, Every Discipline", "text": "Branding, web and marketing come from the same small team, so nothing gets lost between handoffs." },
+        { "accent": "#F43F5E", "title": "We Sweat the Details", "text": "Every project — big or small — gets the same level of attention, because it's our reputation on the line too." },
+        { "accent": "#14B8A6", "title": "Built Around Your Feedback", "text": "Short feedback loops mean you see progress early and often, not just a reveal at the very end." }
     ],
     "footer": {
         "quickLinks": [

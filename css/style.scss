@@ -486,6 +486,22 @@ h1, h2, h3, .navbar-brand {
     }
 }
 
+.service-icon-cycle.single-icon .icon-slide {
+    animation: none;
+    opacity: 1;
+
+    .cycle-icon path, .cycle-icon circle, .cycle-icon rect {
+        animation: iconDrawLoop 4s ease-in-out infinite;
+    }
+}
+
+@keyframes iconDrawLoop {
+    0%   { stroke-dashoffset: 1; }
+    30%  { stroke-dashoffset: 0; }
+    70%  { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 1; }
+}
+
 @keyframes iconFadeCycle {
     0%    { opacity: 0; }
     3.3%  { opacity: 1; }
@@ -1147,6 +1163,13 @@ h1, h2, h3, .navbar-brand {
         color: var(--accent, #{$secondary});
         opacity: 0.6;
         margin-bottom: 14px;
+    }
+
+    h6 {
+        color: #ffffff;
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
 
     .testimonial-stars {

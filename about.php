@@ -20,10 +20,11 @@ include __DIR__ . '/components/header.php';
                             The team behind <span class="text-gradient-brand">brands that grow</span>
                         </h1>
                         <p class="banner-text max-width-700" data-animate data-delay="220">
-                            MellowDigi started as a small creative studio with a simple goal — help
-                            ambitious businesses look and perform like the brand they're capable of
-                            becoming. Today we're a full-service team spanning photography, video,
-                            branding, print, web and digital marketing, but the goal hasn't changed.
+                            MellowDigi is a new digital creative studio built around a simple goal —
+                            help ambitious businesses look and perform like the brand they're capable
+                            of becoming. We bring photography, video, branding, print, web development
+                            and digital marketing together under one roof, with a small, hands-on team
+                            that's obsessed with getting the details right.
                         </p>
                         <a href="contact.html" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
                     </div>
