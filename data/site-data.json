@@ -33,9 +33,9 @@
             { "label": "Logo Design & Visual Systems", "url": "logodesign-visualsystem.php" },
             { "label": "Packaging Design", "url": "packaging-design.php" },
             { "label": "Outdoor & Environmental Graphics", "url": "outdoor-environmental-graphics.php" },
-            { "label": "Marketing Collateral (Brochures, Flyers, Business Cards)", "url": "#" },
-            { "label": "Presentation Design", "url": "#" },
-            { "label": "Product Catalog Development", "url": "#" }
+            { "label": "Marketing Collateral (Brochures, Flyers, Business Cards)", "url": "marketing-collateral.php" },
+            { "label": "Presentation Design", "url": "presentation-design.php" },
+            { "label": "Product Catalog Development", "url": "product-catalog-development.php" }
         ] },
         { "title": "Digital Marketing & Growth", "items": [
             { "label": "Social Media Marketing & Management", "url": "#" },
