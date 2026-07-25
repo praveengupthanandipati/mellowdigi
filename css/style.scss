@@ -1631,3 +1631,90 @@ h1, h2, h3, .navbar-brand {
         color: $white;
     }
 }
+
+/* ==========================================================================
+   FAQ Accordion
+   ========================================================================== */
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+    @include transition($transition-smooth);
+
+    &:hover {
+        border-color: var(--accent, $secondary);
+    }
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 24px 28px;
+    background: none;
+    border: none;
+    text-align: left;
+    color: $white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+
+    @media (max-width: 991.98px) {
+        padding: 20px 22px;
+        font-size: 0.98rem;
+    }
+}
+
+.faq-question .faq-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--accent, $secondary);
+    @include transition($transition-smooth);
+}
+
+.faq-question .faq-icon svg {
+    width: 14px;
+    height: 14px;
+    @include transition($transition-smooth);
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    background: var(--accent, $secondary);
+    border-color: var(--accent, $secondary);
+    color: $white;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon svg {
+    transform: rotate(180deg);
+}
+
+.faq-answer-body {
+    padding: 0 28px 26px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.75;
+
+    @media (max-width: 991.98px) {
+        padding: 0 22px 22px;
+    }
+}

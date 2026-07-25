@@ -44,10 +44,9 @@
         ] },
         { "title": "Web & Mobile Solutions", "items": [
             { "label": "UI/UX Design & Prototyping", "url": "uiux-design.php" },
-            { "label": "Custom Web Development", "url": "#" },
-            { "label": "CMS Integration (WordPress, Shopify, etc.)", "url": "#" },
-            { "label": "E-Commerce Development", "url": "#" },
-            { "label": "Mobile App Development (iOS & Android)", "url": "#" }
+            { "label": "Custom Web Development", "url": "custom-web-development.php" },           
+            { "label": "E-Commerce Development", "url": "ecommerce-development.php" },
+            { "label": "Mobile App Development (iOS & Android)", "url": "mobile-app-development.php" }
         ] },
         { "title": "Photography", "items": [
             { "label": "Wedding & Events Photography", "url": "#" },

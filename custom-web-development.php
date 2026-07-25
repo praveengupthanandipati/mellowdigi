@@ -1,44 +1,66 @@
 <?php
 $siteData = json_decode(file_get_contents(__DIR__ . '/data/site-data.json'), true);
 
-$pageTitle       = 'Social Media Marketing & Management | MellowDigi';
-$pageDescription = "Stop scrolling, start converting. MellowDigi offers strategic social media management that builds communities and drives revenue. Let's grow your brand, calmly.";
-$pageKeywords    = 'social media management, social media marketing agency, content creation agency, instagram marketing, facebook advertising, community management, digital strategy, brand awareness, MellowDigi social media';
-$pageUrl         = 'https://www.mellowdigi.com/social-media-marketing.php';
+$pageTitle       = 'Custom Web Development | MellowDigi';
+$pageDescription = 'Custom websites built for your business, not a template. MellowDigi creates fast, secure and scalable web platforms that grow with you.';
+$pageKeywords    = 'custom web development, web application development, custom website design, e-commerce development, SaaS platform development, CRM development, booking system development, full-stack development, MellowDigi web development';
+$pageUrl         = 'https://www.mellowdigi.com/custom-web-development.php';
 include __DIR__ . '/components/header.php';
 
+$benefits = [
+    'Exactly the features you need &mdash; nothing more, nothing less',
+    'A design that truly reflects your brand',
+    'Room to grow and add new features later',
+    'Security and performance optimized for your specific use case',
+];
+
 $services = [
-    ['icon' => 'pencil', 'accent' => '#2BACE2', 'title' => 'Strategic Content Creation', 'subtitle' => 'Thumb-Stopping Visuals &amp; Copy', 'description' => "We don't do &ldquo;random.&rdquo; We craft thumb-stopping visuals and copy tailored to your specific audience persona. From carousels to Reels, we tell your story in a way that resonates."],
-    ['icon' => 'network', 'accent' => '#3DB54A', 'title' => 'Community Management', 'subtitle' => 'A Two-Way Street', 'description' => 'Social media is a two-way street. We reply, engage and foster relationships with your followers, turning strangers into loyal advocates for your brand.'],
-    ['icon' => 'megaphone', 'accent' => '#F99E1F', 'title' => 'Paid Social Advertising', 'subtitle' => 'Need a Boost?', 'description' => 'We manage high-ROI ad campaigns across Meta, Instagram and LinkedIn. We optimize for conversions, not just &ldquo;Likes.&rdquo;'],
-    ['icon' => 'search', 'accent' => '#8B5CF6', 'title' => 'Analytics &amp; Reporting', 'subtitle' => 'Beyond the Vanity Metrics', 'description' => 'We cut through the vanity metrics &mdash; goodbye, &ldquo;Impressions.&rdquo; We track what matters: engagement rates, click-throughs and growth towards your bottom line.'],
+    ['icon' => 'webmobile', 'accent' => '#2BACE2', 'title' => 'Custom Websites', 'subtitle' => 'Professional &amp; Visually Stunning', 'description' => 'From corporate sites to portfolio showcases &mdash; we build professional, visually stunning websites that tell your story.'],
+    ['icon' => 'codebrackets', 'accent' => '#3DB54A', 'title' => 'Web Applications', 'subtitle' => 'Beyond the Brochure Site', 'description' => 'Need something more than a brochure site? We build custom business applications, client portals, dashboards and internal tools.'],
+    ['icon' => 'box', 'accent' => '#F99E1F', 'title' => 'E-Commerce Development', 'subtitle' => 'Built to Convert', 'description' => 'Custom online stores with seamless payment integration, inventory management and a checkout experience that converts.'],
+    ['icon' => 'network', 'accent' => '#8B5CF6', 'title' => 'SaaS Platforms', 'subtitle' => 'Scalable From Day One', 'description' => 'We build scalable Software-as-a-Service platforms for startups and growing businesses in EdTech, FinTech, Healthcare and more.'],
+    ['icon' => 'book', 'accent' => '#F43F5E', 'title' => 'Booking &amp; Reservation Systems', 'subtitle' => 'For Service-Based Businesses', 'description' => 'Custom scheduling solutions for service-based businesses &mdash; from appointment booking to resource management.'],
+    ['icon' => 'briefcase', 'accent' => '#14B8A6', 'title' => 'CRM &amp; ERP Solutions', 'subtitle' => 'Streamline Your Operations', 'description' => 'Custom business management systems that streamline your operations, from lead tracking to order fulfillment.'],
+];
+
+$techStack = [
+    ['accent' => '#2BACE2', 'title' => 'Front-End', 'items' => ['React', 'Angular', 'Vue.js', 'HTML5', 'CSS3', 'JavaScript']],
+    ['accent' => '#3DB54A', 'title' => 'Back-End', 'items' => ['Node.js', 'PHP (Laravel)', 'Python (Django)', 'TypeScript']],
+    ['accent' => '#F99E1F', 'title' => 'CMS &amp; E-Commerce', 'items' => ['WordPress', 'WooCommerce', 'Custom Solutions']],
+    ['accent' => '#8B5CF6', 'title' => 'Database', 'items' => ['MySQL', 'PostgreSQL', 'MongoDB']],
+    ['accent' => '#F43F5E', 'title' => 'Infrastructure', 'items' => ['Linux Servers', 'Cloud Deployment', 'SSL / Security Configuration']],
 ];
 
 $process = [
-    ['step' => '01', 'title' => 'Discovery', 'description' => 'We dive deep into your brand, competitors and ideal customer. We build the foundation.'],
-    ['step' => '02', 'title' => 'Strategy', 'description' => 'We create a content calendar aligned with your business goals, not just trending sounds.'],
-    ['step' => '03', 'title' => 'Creation &amp; Execution', 'description' => 'We design high-quality graphics, write compelling copy and schedule posts at optimal times.'],
-    ['step' => '04', 'title' => 'Monitor &amp; Optimize', 'description' => "We watch the data. If something isn't working, we pivot fast and double down on what is."],
+    ['step' => '01', 'title' => 'Discovery', 'description' => 'We talk to you. We understand your goals, your audience and your vision. We ask the right questions to build the right solution.'],
+    ['step' => '02', 'title' => 'Planning &amp; Architecture', 'description' => 'We design the technical blueprint &mdash; database structure, system architecture and feature roadmap.'],
+    ['step' => '03', 'title' => 'Design', 'description' => 'Our designers create a beautiful, user-friendly interface that reflects your brand.'],
+    ['step' => '04', 'title' => 'Development', 'description' => 'We write clean, efficient code. We build your platform with modern frameworks that ensure performance and security.'],
+    ['step' => '05', 'title' => 'Testing', 'description' => 'We test everything &mdash; functionality, performance, security and user experience. We fix every issue before you see it.'],
+    ['step' => '06', 'title' => 'Launch', 'description' => 'We deploy your website, handle the migration and make sure everything runs smoothly.'],
+    ['step' => '07', 'title' => 'Maintenance &amp; Support', 'description' => "Your website is live, but we're not done. We offer ongoing support, updates and improvements."],
 ];
 
 $reasons = [
-    ['title' => 'The &ldquo;Mellow&rdquo; Strategy', 'description' => 'We prioritize quality over quantity. No spammy tactics. Just intentional, high-value content.'],
-    ['title' => 'Data-Backed Decisions', 'description' => 'We use AI and analytics to know exactly when to post and what to post.'],
-    ['title' => 'Dedicated Team', 'description' => 'You get a dedicated content strategist and designer who treat your brand like their own.'],
-    ['title' => 'Transparent Reporting', 'description' => 'Monthly reports delivered straight to your inbox &mdash; without the fluff.'],
+    ['title' => 'Built for You', 'description' => 'Every line of code is written with your specific business needs in mind.'],
+    ['title' => 'Scalable &amp; Secure', 'description' => 'We build platforms that grow with you, not break when you succeed.'],
+    ['title' => 'Full Support', 'description' => "From planning to launch to ongoing maintenance &mdash; we're with you for the long haul."],
+    ['title' => 'Transparent Process', 'description' => 'No hidden costs. No surprises. Just honest communication at every step.'],
+    ['title' => 'Stress-Free Experience', 'description' => 'We manage the complexity so you don&rsquo;t have to. You focus on your business; we focus on your website.'],
 ];
 
 $faqs = [
-    ['question' => 'How often will you post on my account?', 'answer' => 'We recommend 3&ndash;5 times per week for optimal growth, but we customize this based on your industry and capacity.'],
-    ['question' => 'Do I need to approve everything before it goes live?', 'answer' => 'Absolutely! You maintain full control. We send a monthly content calendar for your approval.'],
-    ['question' => 'How long until I see results?', 'answer' => 'While organic growth takes time, many clients see increased engagement within the first 30 days.'],
-    ['question' => 'What platforms do you manage?', 'answer' => 'Instagram, Facebook, LinkedIn, TikTok and Twitter/X.'],
+    ['question' => 'How long does custom development take?', 'answer' => "It depends on complexity. A simple website: 2&ndash;4 weeks. A complex web application: 1&ndash;3 months. We'll give you a realistic timeline upfront."],
+    ['question' => 'How much does a custom website cost?', 'answer' => 'Every project is unique. We provide a detailed quote after understanding your requirements &mdash; no generic pricing, just what fits your needs.'],
+    ['question' => 'Do you maintain websites after launch?', 'answer' => 'Absolutely! We offer maintenance packages that include security updates, performance optimization and feature enhancements.'],
+    ['question' => 'What if I already have a website? Can you redesign it?', 'answer' => 'Yes! We can rebuild your existing site using modern technologies while preserving your content and SEO value.'],
+    ['question' => 'Will my website work on mobile devices?', 'answer' => 'Yes. All our websites are fully responsive and optimized for phones, tablets and desktops.'],
+    ['question' => 'Can I update content myself later?', 'answer' => 'If we use a CMS like WordPress, yes. We can also build custom admin panels that let you manage content without touching code.'],
+    ['question' => 'What if I need new features later?', 'answer' => 'We build your platform to be extensible. Adding new features is easier and faster because the foundation is solid.'],
 ];
 
-$platforms = ['Instagram', 'Facebook', 'LinkedIn', 'TikTok', 'Twitter/X'];
-
 $heroIcons = [
-    ['icon' => 'megaphone', 'label' => 'Social Media Marketing &amp; Management'],
+    ['icon' => 'codebrackets', 'label' => 'Custom Web Development'],
 ];
 ?>
 
@@ -49,23 +71,22 @@ $heroIcons = [
             <div class="container-fluid nav-shell">
                 <div class="row align-items-center banner-hero">
                     <div class="col-lg-6">
-                        <p class="eyebrow" data-animate>Social Media Marketing &amp; Management</p>
+                        <p class="eyebrow" data-animate>Custom Web Development</p>
                         <h1 class="banner-title" data-animate data-delay="120">
-                            Your brand voice, <span class="text-gradient-brand">amplified</span>
+                            Your website should be as <span class="text-gradient-brand">unique as your business</span>
                         </h1>
                         <p class="banner-text max-width-700" data-animate data-delay="220">
-                            Social media isn't just about posting &mdash; it's about connecting. At
-                            MellowDigi, we take the chaos out of content creation, combining
-                            data-driven strategy with authentic storytelling to build communities
-                            that actually care about what you have to say.
+                            Templates are easy. But they'll never truly capture what makes your
+                            brand special. At MellowDigi, we build custom web platforms from the
+                            ground up &mdash; tailored to your goals, your audience and your vision.
                         </p>
                         <p class="banner-text max-width-700" data-animate data-delay="260">
-                            We manage the noise so you can focus on the product. From strategy to
-                            scheduling to the numbers that matter, we've got your feed covered.
+                            No unnecessary features. No generic designs. Just a website that works
+                            exactly the way you need it to.
                         </p>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
                             <a href="portfolio.html" class="btn-hero-cta">See Our Work</a>
-                            <a href="contact.html" class="btn-hero-cta">Let's Talk About Your Goals</a>
+                            <a href="contact.html" class="btn-hero-cta">Let's Build Something Yours</a>
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -92,45 +113,48 @@ $heroIcons = [
          </section>
          <!--/ banner-->
 
-         <!-- the problem / the mellow solution -->
+         <!-- what is custom web development -->
          <section class="bottom-services-section">
             <div class="container-fluid nav-shell">
                 <div class="row mb-5">
                     <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Feeling the Burnout?</p>
-                        <h2 class="section-heading">The chaos ends here</h2>
+                        <p class="eyebrow">What Is Custom Web Development?</p>
+                        <h2 class="section-heading">Build your own home, not a pre-furnished apartment</h2>
                     </div>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="why-card why-card-intro" style="--accent:#2BACE2" data-animate>
-                            <h3>Sound Familiar?</h3>
-                            <p>Struggling to keep up with the &ldquo;algorithm gods.&rdquo; Running out
-                            of content ideas that aren't boring. Posting consistently but still seeing
-                            zero ROI. If social media has started to feel like a second job, you're not
-                            alone &mdash; and you don't have to do it alone either.</p>
+                            <h3>The Pre-Furnished Apartment</h3>
+                            <p>A template website is like a pre-furnished apartment &mdash; it's fine
+                            for some people, but you can't move walls, add rooms or change the layout
+                            without breaking things. Custom development is like building your own home
+                            instead.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="why-card" style="--accent:#3DB54A" data-animate data-delay="90">
-                            <h3>We Take the Stress Off Your Shoulders</h3>
-                            <p>MellowDigi manages the noise so you can focus on the product. We don't
-                            just post; we curate, engage and convert &mdash; turning your social channels
-                            into a genuine growth engine instead of one more thing on your to-do list.</p>
+                            <h3>Your Digital Home, Built the Way You Want It</h3>
+                            <p>Custom development gives you:</p>
+                            <ul class="startup-checklist">
+                                <?php foreach ($benefits as $benefit): ?>
+                                <li><?php echo $benefit; ?></li>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
          </section>
-         <!--/ the problem / the mellow solution -->
+         <!--/ what is custom web development -->
 
          <!-- what we offer -->
          <section class="popular-services-section">
             <div class="container-fluid nav-shell">
                 <div class="row mb-5">
                     <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Our Social Media Services</p>
-                        <h2 class="section-heading">Everything your feed needs to convert</h2>
+                        <p class="eyebrow">Our Custom Web Development Services</p>
+                        <h2 class="section-heading">Whatever you're building, we can build it</h2>
                     </div>
                 </div>
                 <div class="row g-4">
@@ -156,7 +180,7 @@ $heroIcons = [
                 <div class="row mb-5">
                     <div class="col-lg-7" data-animate>
                         <p class="eyebrow">A Closer Look</p>
-                        <h2 class="section-heading">What's inside every plan</h2>
+                        <h2 class="section-heading">What's inside every build</h2>
                     </div>
                 </div>
                 <div class="row g-4">
@@ -173,6 +197,37 @@ $heroIcons = [
          </section>
          <!--/ services detail -->
 
+         <!-- technologies we work with -->
+         <section class="bottom-services-section">
+            <div class="container-fluid nav-shell">
+                <div class="row mb-5">
+                    <div class="col-lg-7" data-animate>
+                        <p class="eyebrow">Technologies We Work With</p>
+                        <h2 class="section-heading">The right tools, not the trendy ones</h2>
+                        <p class="banner-text max-width-700" data-animate data-delay="80">
+                            Our stack prioritizes reliability, security and long-term
+                            maintainability.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <?php foreach ($techStack as $i => $stack): ?>
+                    <div class="col" data-animate data-delay="<?php echo $i * 80; ?>">
+                        <div class="why-card" style="--accent:<?php echo $esc($stack['accent']); ?>">
+                            <h3><?php echo $stack['title']; ?></h3>
+                            <div class="audience-pills">
+                                <?php foreach ($stack['items'] as $item): ?>
+                                <span class="audience-pill"><?php echo $esc($item); ?></span>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+         </section>
+         <!--/ technologies we work with -->
+
          <!-- our process -->
          <section class="who-we-are">
             <div class="bg-bubble bubble-blue" aria-hidden="true"></div>
@@ -181,12 +236,8 @@ $heroIcons = [
             <div class="container-fluid nav-shell">
                 <div class="row mb-5">
                     <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Our Process</p>
-                        <h2 class="section-heading">How we work</h2>
-                        <p class="banner-text max-width-700" data-animate data-delay="80">
-                            We don't just schedule posts. We build a strategy that reflects your
-                            brand and moves the numbers that matter.
-                        </p>
+                        <p class="eyebrow">Our Simple Process</p>
+                        <h2 class="section-heading">From discovery to ongoing support</h2>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
@@ -208,23 +259,22 @@ $heroIcons = [
          <section class="home_startup">
             <div class="row g-0 align-items-stretch">
                 <div class="col-lg-6 startup-image" data-animate>
-                    <img src="img/startup.jpg" alt="MellowDigi social media team at work">
+                    <img src="img/startup.jpg" alt="MellowDigi custom web development team at work">
                 </div>
                 <div class="col-lg-6 startup-content">
                     <div class="startup-content-inner">
-                        <h2 class="startup-heading" data-animate>Why choose MellowDigi?</h2>
-                        <h3 class="startup-subheading" data-animate data-delay="80">The &ldquo;Mellow&rdquo; strategy</h3>
+                        <h2 class="startup-heading" data-animate>Why choose MellowDigi for custom development?</h2>
+                        <h3 class="startup-subheading" data-animate data-delay="80">Built for you, not for a template</h3>
                         <p class="startup-text" data-animate data-delay="160">
-                            We prioritize quality over quantity &mdash; no spammy tactics, just
-                            intentional, high-value content that builds a community that actually
-                            cares.
+                            We build platforms that grow with you, not break when you succeed &mdash;
+                            and we manage the complexity so you don't have to.
                         </p>
                         <ul class="startup-checklist" data-animate data-delay="220">
                             <?php foreach ($reasons as $reason): ?>
                             <li><strong><?php echo $reason['title']; ?></strong> &mdash; <?php echo $reason['description']; ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Social</a>
+                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Development</a>
                     </div>
                 </div>
             </div>
@@ -237,10 +287,10 @@ $heroIcons = [
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8" data-animate>
                         <p class="eyebrow">The Mellow Guarantee</p>
-                        <h2 class="section-heading">Peace of mind is the greatest ROI.</h2>
+                        <h2 class="section-heading">Your website should work as hard as you do.</h2>
                         <p class="banner-text max-width-700 mx-auto">
-                            We guarantee consistent, authentic engagement that aligns with your
-                            brand's values.
+                            We promise clean code, honest timelines and a platform that delivers
+                            real business value. No shortcuts. No excuses. Just quality.
                         </p>
                     </div>
                 </div>
@@ -282,32 +332,14 @@ $heroIcons = [
          </section>
          <!--/ faq -->
 
-         <!-- platforms we manage -->
-         <section class="bottom-services-section">
-            <div class="container-fluid nav-shell">
-                <div class="row mb-5">
-                    <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Platforms We Manage</p>
-                        <h2 class="section-heading">Wherever your audience scrolls, we're there</h2>
-                    </div>
-                </div>
-                <div class="audience-pills" data-animate data-delay="100">
-                    <?php foreach ($platforms as $platform): ?>
-                    <span class="audience-pill"><?php echo $esc($platform); ?></span>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-         </section>
-         <!--/ platforms we manage -->
-
          <!-- cta -->
          <section class="founder-section">
             <div class="bg-bubble bubble-orange" aria-hidden="true"></div>
             <div class="container-fluid nav-shell">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Ready to Build a Community?</p>
-                        <h2 class="section-heading">Stop treating social media like a chore. Start treating it like your greatest asset.</h2>
+                        <p class="eyebrow">Ready to Build Your Digital Home?</p>
+                        <h2 class="section-heading">Stop settling for templates. Get a custom website that truly represents your brand and works for your business.</h2>
                         <ul class="footer-contact">
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
@@ -326,8 +358,7 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Let's Get Started</a>
-                            <a href="contact.html" class="btn-hero-cta">Request a Free Audit</a>
+                            <a href="contact.html" class="btn-hero-cta">Start Your Project</a>
                         </div>
                     </div>
                 </div>

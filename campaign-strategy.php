@@ -200,8 +200,8 @@ $heroIcons = [
                 </div>
                 <div class="row g-4">
                     <?php foreach ($services as $i => $service): ?>
-                    <div class="col-lg-6">
-                        <div class="why-card<?php echo $i === 0 ? ' why-card-intro' : ''; ?>" style="--accent:<?php echo $esc($service['accent']); ?>" data-animate data-delay="<?php echo ($i % 2) * 90; ?>">
+                    <div class="col-12">
+                        <div class="why-card<?php echo $i === 0 ? ' why-card-intro' : ''; ?>" style="--accent:<?php echo $esc($service['accent']); ?>" data-animate data-delay="<?php echo $i * 60; ?>">
                             <h3><?php echo $service['title']; ?></h3>
                             <p><?php echo $service['description']; ?></p>
                             <?php if (!empty($service['items'])): ?>
@@ -368,15 +368,26 @@ $heroIcons = [
                         <h2 class="section-heading">Questions, answered before you ask</h2>
                     </div>
                 </div>
-                <div class="row g-4">
-                    <?php foreach ($faqs as $i => $faq): ?>
-                    <div class="col-lg-6">
-                        <div class="why-card<?php echo $i === 0 ? ' why-card-intro' : ''; ?>" data-animate data-delay="<?php echo ($i % 2) * 90; ?>">
-                            <h3><?php echo $esc($faq['question']); ?></h3>
-                            <p><?php echo $faq['answer']; ?></p>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="faq-accordion" id="faqAccordion" data-animate data-delay="100">
+                            <?php foreach ($faqs as $i => $faq): ?>
+                            <div class="faq-item">
+                                <h3><button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faqAnswer<?php echo $i; ?>" aria-expanded="false" aria-controls="faqAnswer<?php echo $i; ?>">
+                                    <span><?php echo $esc($faq['question']); ?></span>
+                                    <span class="faq-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                                    </span>
+                                </button></h3>
+                                <div class="collapse" id="faqAnswer<?php echo $i; ?>" data-bs-parent="#faqAccordion">
+                                    <div class="faq-answer-body">
+                                        <p><?php echo $faq['answer']; ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
-                    <?php endforeach; ?>
                 </div>
             </div>
          </section>
