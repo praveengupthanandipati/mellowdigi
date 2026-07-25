@@ -38,12 +38,12 @@
             { "label": "Product Catalog Development", "url": "product-catalog-development.php" }
         ] },
         { "title": "Digital Marketing & Growth", "items": [
-            { "label": "Social Media Marketing & Management", "url": "#" },
-            { "label": "Search Engine Optimization (SEO)", "url": "#" },
-            { "label": "Campaign Strategy & Execution", "url": "#" }
+            { "label": "Social Media Marketing & Management", "url": "social-media-marketing.php" },
+            { "label": "Search Engine Optimization (SEO)", "url": "search-engine-optimization.php" },
+            { "label": "Campaign Strategy & Execution", "url": "campaign-strategy.php" }
         ] },
         { "title": "Web & Mobile Solutions", "items": [
-            { "label": "UI/UX Design & Prototyping", "url": "#" },
+            { "label": "UI/UX Design & Prototyping", "url": "uiux-design.php" },
             { "label": "Custom Web Development", "url": "#" },
             { "label": "CMS Integration (WordPress, Shopify, etc.)", "url": "#" },
             { "label": "E-Commerce Development", "url": "#" },
