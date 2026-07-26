@@ -49,9 +49,9 @@
             { "label": "Mobile App Development (iOS & Android)", "url": "mobile-app-development.php" }
         ] },
         { "title": "Photography", "items": [
-            { "label": "Wedding & Events Photography", "url": "#" },
-            { "label": "Corporate & Industrial Photography", "url": "#" },
-            { "label": "Product & Food Photography", "url": "#" },
+            { "label": "Wedding & Events Photography", "url": "wedding-events-photography.php" },
+            { "label": "Corporate & Industrial Photography", "url": "corporate-industrial-photography.php" },
+            { "label": "Product & Food Photography", "url": "product-food-photography.php" },
             { "label": "Fashion & Editorial Photography", "url": "#" },
             { "label": "Macro & Detail Photography", "url": "#" }
         ] },
