@@ -52,12 +52,12 @@
             { "label": "Wedding & Events Photography", "url": "wedding-events-photography.php" },
             { "label": "Corporate & Industrial Photography", "url": "corporate-industrial-photography.php" },
             { "label": "Product & Food Photography", "url": "product-food-photography.php" },
-            { "label": "Fashion & Editorial Photography", "url": "#" },
-            { "label": "Macro & Detail Photography", "url": "#" }
+            { "label": "Fashion & Editorial Photography", "url": "fashion-editorial-photography.php" },
+            { "label": "Macro & Detail Photography", "url": "macro-detail-photography.php" }
         ] },
         { "title": "Video & Motion Production", "items": [
-            { "label": "Brand Documentaries & Storytelling", "url": "#" },
-            { "label": "Wedding & Event Cinematography", "url": "#" },
+            { "label": "Brand Documentaries & Storytelling", "url": "brand-documentaries-storytelling.php" },
+            { "label": "Wedding & Event Cinematography", "url": "wedding-event-cinematography.php" },
             { "label": "Product Demo & Explainer Videos", "url": "#" },
             { "label": "Promotional & Commercial Videos", "url": "#" },
             { "label": "Tutorial & Educational Content", "url": "#" },
