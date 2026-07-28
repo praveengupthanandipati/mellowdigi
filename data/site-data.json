@@ -58,8 +58,8 @@
         { "title": "Video & Motion Production", "items": [
             { "label": "Brand Documentaries & Storytelling", "url": "brand-documentaries-storytelling.php" },
             { "label": "Wedding & Event Cinematography", "url": "wedding-event-cinematography.php" },
-            { "label": "Product Demo & Explainer Videos", "url": "#" },
-            { "label": "Promotional & Commercial Videos", "url": "#" },
+            { "label": "Product Demo & Explainer Videos", "url": "product-demo-explainer-videos.php" },
+            { "label": "Promotional & Commercial Videos", "url": "promotional-commercial-videos.php" },
             { "label": "Tutorial & Educational Content", "url": "#" },
             { "label": "Corporate & Executive Interviews", "url": "#" },
             { "label": "Live Stream Production", "url": "#" },
