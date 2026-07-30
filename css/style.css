@@ -2092,6 +2092,51 @@ h1, h2, h3, .navbar-brand {
 }
 
 /* ==========================================================================
+   Enquiry form (services pages, reusable)
+   ========================================================================== */
+.enquiry-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.enquiry-input,
+.enquiry-select,
+.enquiry-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+.enquiry-input::placeholder,
+.enquiry-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.enquiry-input:focus,
+.enquiry-select:focus,
+.enquiry-textarea:focus {
+  outline: none;
+  border-color: #f5811f;
+  background: rgba(255, 255, 255, 0.06);
+}
+.enquiry-select option {
+  color: #212529;
+  background: #ffffff;
+}
+.enquiry-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.enquiry-form .btn-hero-cta {
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
    Quote callouts (Corporate & Executive Interviews page, reusable)
    ========================================================================== */
 .quote-callout {

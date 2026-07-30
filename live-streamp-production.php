@@ -7,8 +7,6 @@ $pageKeywords    = 'live stream production, live streaming, live broadcast, vide
 $pageUrl         = 'https://www.mellowdigi.com/live-streamp-production.php';
 include __DIR__ . '/components/header.php';
 
-$checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>';
-
 $stats = [
     ['number' => '500+', 'label' => 'Live Events Produced'],
     ['number' => '99.9%', 'label' => 'Uptime Guarantee'],
@@ -20,20 +18,6 @@ $workflow = [
     ['step' => '01', 'accent' => '#2BACE2', 'title' => 'Pre-Production Planning', 'items' => ['Concept development and storyboarding', 'Equipment selection and setup', 'Rehearsal coordination', 'Backup and contingency planning']],
     ['step' => '02', 'accent' => '#3DB54A', 'title' => 'Production Execution', 'items' => ['Multi-camera switching', 'Professional audio mixing', 'Real-time graphics and overlays', 'Remote camera operation', 'Live switching and directing']],
     ['step' => '03', 'accent' => '#F99E1F', 'title' => 'Post-Production', 'items' => ['Recording and archiving', 'Video editing and highlights', 'Clip creation for social media', 'Analytics and engagement reports']],
-];
-
-$packages = [
-    ['name' => 'Standard Stream', 'accent' => '#2BACE2', 'featured' => false, 'price' => '$499', 'duration' => 'Up to 2 hours', 'bestFor' => 'Webinars, interviews, podcasts', 'features' => ['Single camera setup', 'Basic audio', 'Simple graphics overlay', '1 operator']],
-    ['name' => 'Professional Stream', 'accent' => '#F99E1F', 'featured' => true, 'price' => '$1,499', 'duration' => 'Up to 4 hours', 'bestFor' => 'Corporate events, product launches, panel discussions', 'features' => ['3-camera setup', 'Professional audio with mixer', 'Custom graphics and lower thirds', '2 operators + 1 director']],
-    ['name' => 'Premium Production', 'accent' => '#8B5CF6', 'featured' => false, 'price' => '$3,999', 'duration' => 'Full day', 'bestFor' => 'Concerts, conferences, large-scale events', 'features' => ['5+ camera setup', 'Broadcast-grade audio', 'Full graphics package', '4 operators + director + producer']],
-];
-
-$addons = [
-    ['name' => 'Additional cameras', 'price' => '$200/camera'],
-    ['name' => 'Remote production', 'price' => '$300'],
-    ['name' => 'Social media clipping', 'price' => '$150'],
-    ['name' => 'Live captioning', 'price' => '$250'],
-    ['name' => 'Multi-language subtitles', 'price' => '$400'],
 ];
 
 $platforms = ['YouTube Live', 'Facebook Live', 'LinkedIn Live', 'Twitch', 'Vimeo', 'Custom RTMP destinations', 'Corporate websites (embedded)', 'Zoom Webinars', 'Microsoft Teams'];
@@ -79,7 +63,7 @@ $faqs = [
     ['question' => 'How far in advance should I book?', 'answer' => 'At least 2 weeks for standard events, and 4&ndash;6 weeks for large-scale productions.'],
     ['question' => 'Do you offer remote production?', 'answer' => 'Yes, we can produce events remotely with on-site camera operators.'],
     ['question' => 'What if my internet goes down?', 'answer' => 'We provide backup internet and cellular bonding to keep you live.'],
-    ['question' => 'Can I get a recording afterward?', 'answer' => 'Yes, recording is included in all packages.'],
+    ['question' => 'Can I get a recording afterward?', 'answer' => 'Yes, recording is included with every production.'],
     ['question' => 'Do you support multiple languages?', 'answer' => 'Yes, we offer live translation and subtitling services.'],
 ];
 
@@ -106,7 +90,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3 mb-4" data-animate data-delay="280">
                             <a href="contact.html" class="btn-hero-cta">Get a Custom Quote</a>
-                            <a href="#packages" class="btn-hero-cta">See Packages</a>
+                            <a href="#enquiry" class="btn-hero-cta">Send an Enquiry</a>
                         </div>
                         <div class="row row-cols-2 row-cols-sm-4 g-3 tutorial-stats" data-animate data-delay="320">
                             <?php foreach ($stats as $stat): ?>
@@ -170,61 +154,6 @@ $heroIcons = [
             </div>
          </section>
          <!--/ what we offer -->
-
-         <!-- production packages -->
-         <section class="who-we-are" id="packages">
-            <div class="bg-bubble bubble-blue" aria-hidden="true"></div>
-            <div class="bg-bubble bubble-green" aria-hidden="true"></div>
-            <div class="bg-bubble bubble-orange" aria-hidden="true"></div>
-            <div class="container-fluid nav-shell">
-                <div class="row mb-5">
-                    <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Production Packages</p>
-                        <h2 class="section-heading">Pick the coverage that fits your event</h2>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-3 g-4 mb-5">
-                    <?php foreach ($packages as $i => $pkg): ?>
-                    <div class="col" data-animate data-delay="<?php echo $i * 110; ?>">
-                        <div class="pricing-card<?php echo $pkg['featured'] ? ' pricing-card-featured' : ''; ?>" style="--accent:<?php echo $esc($pkg['accent']); ?>">
-                            <?php if ($pkg['featured']): ?>
-                            <span class="pricing-card-badge">Most Popular</span>
-                            <?php endif; ?>
-                            <h3 class="pricing-card-name"><?php echo $esc($pkg['name']); ?></h3>
-                            <div class="pricing-card-price">
-                                <span class="amount"><?php echo $esc($pkg['price']); ?></span>
-                                <span class="period">starting at</span>
-                            </div>
-                            <p class="pricing-card-duration">Duration: <?php echo $esc($pkg['duration']); ?></p>
-                            <ul class="pricing-card-features">
-                                <?php foreach ($pkg['features'] as $feature): ?>
-                                <li><?php echo $checkIcon; ?><span><?php echo $esc($feature); ?></span></li>
-                                <?php endforeach; ?>
-                            </ul>
-                            <p class="pricing-card-bestfor"><strong>Best for:</strong> <?php echo $esc($pkg['bestFor']); ?></p>
-                            <a href="contact.html" class="btn-hero-cta">Get This Package</a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-                <div class="row">
-                    <div class="col-lg-7" data-animate>
-                        <div class="why-card mb-0">
-                            <h3>Add-Ons</h3>
-                            <div class="addon-list">
-                                <?php foreach ($addons as $addon): ?>
-                                <div class="addon-row">
-                                    <span class="addon-name"><?php echo $esc($addon['name']); ?></span>
-                                    <span class="addon-price"><?php echo $esc($addon['price']); ?></span>
-                                </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-         <!--/ production packages -->
 
          <!-- platforms -->
          <section class="bottom-services-section pb-0">
@@ -418,11 +347,11 @@ $heroIcons = [
                         <ul class="footer-contact">
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                <span>Email: production@mellowdigi.com</span>
+                                <span>Email: info@mellowdigi.com</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                <span>Phone: +91 98765 43210</span>
+                                <span>Phone: +91 77999 71112</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['network']; ?></svg>
@@ -487,15 +416,15 @@ $heroIcons = [
                             <ul class="footer-contact">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['pin']; ?></svg>
-                                    <span>123 Digital Avenue, Tech City, India &ndash; 110001</span>
+                                    <span>Hyderabad, Telangana</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                    <span>+91 98765 43210</span>
+                                    <span>+91 77999 71112</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                    <span>production@mellowdigi.com</span>
+                                    <span>info@mellowdigi.com</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['webmobile']; ?></svg>
@@ -524,6 +453,7 @@ $heroIcons = [
             </div>
          </section>
          <!--/ contact -->
+        <?php include __DIR__ . '/components/enquiry-form.php'; ?>
      </main>
      <!--/ main -->
 

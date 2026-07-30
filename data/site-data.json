@@ -76,11 +76,11 @@
             { "label": "Professional Video Editing & Post-Production", "url": "professional-video-editing-post-production.php" }
         ] },
         { "title": "Print & Physical Media", "items": [
-            { "label": "Business Cards & Stationery", "url": "#" },
-            { "label": "Brochures & Flyers", "url": "#" },
-            { "label": "Outdoor Posters & Banners", "url": "#" },
-            { "label": "Wedding & Event Albums", "url": "#" },
-            { "label": "Corporate Print Materials", "url": "#" }
+            { "label": "Business Cards & Stationery", "url": "business-cards-stationery.php" },
+            { "label": "Brochures & Flyers", "url": "brochures-flyers.php" },
+            { "label": "Outdoor Posters & Banners", "url": "outdoor-posters-banners.php" },
+            { "label": "Wedding & Event Albums", "url": "wedding-event-albums.php" },
+            { "label": "Corporate Print Materials", "url": "corporate-print-materials.php" }
         ] }
     ],
     "heroIconCycle": [
@@ -172,9 +172,9 @@
             { "icon": "linkedin", "label": "LinkedIn", "url": "#" }
         ],
         "contact": [
-            { "icon": "pin", "text": "4th Floor, Tech Park Avenue, Bengaluru, India" },
-            { "icon": "call", "text": "+91 98765 43210" },
-            { "icon": "mail", "text": "hello@mellowdigi.com" }
+            { "icon": "pin", "text": "Hyderabad, Telangana" },
+            { "icon": "call", "text": "+91 77999 71112" },
+            { "icon": "mail", "text": "info@mellowdigi.com" }
         ]
     }
 }

@@ -295,11 +295,11 @@ $heroIcons = [
                         <ul class="footer-contact">
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                <span>Call us: +91 98765 43210</span>
+                                <span>Call us: +91 77999 71112</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                <span>Email us: hello@mellowdigi.com</span>
+                                <span>Email us: info@mellowdigi.com</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['webmobile']; ?></svg>
@@ -318,6 +318,7 @@ $heroIcons = [
             </div>
          </section>
          <!--/ cta -->
+        <?php include __DIR__ . '/components/enquiry-form.php'; ?>
      </main>
      <!--/ main -->
 

@@ -7,8 +7,6 @@ $pageKeywords    = 'video editing, post-production, color grading, motion graphi
 $pageUrl         = 'https://www.mellowdigi.com/professional-video-editing-post-production.php';
 include __DIR__ . '/components/header.php';
 
-$checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>';
-
 $stats = [
     ['number' => '1,000+', 'label' => 'Projects Completed'],
     ['number' => '4K/8K', 'label' => 'Editing Capability'],
@@ -24,20 +22,6 @@ $services = [
     ['icon' => 'layout', 'accent' => '#F43F5E', 'title' => 'Motion Graphics &amp; Animation', 'items' => ['Animated titles', 'Lower thirds', 'Intros and outros', 'Animated infographics', '2D and 3D animation']],
     ['icon' => 'book', 'accent' => '#14B8A6', 'title' => 'Subtitles &amp; Captions', 'items' => ['Manual transcription', 'Auto-captions (AI-powered)', 'Multi-language subtitles', 'Burn-in or soft subtitles', 'Accessibility compliance']],
     ['icon' => 'box', 'accent' => '#2BACE2', 'title' => 'File Conversion &amp; Formatting', 'items' => ['Social media optimization', 'Aspect ratio adjustments (16:9, 9:16, 1:1)', 'Compression and encoding', '4K to HD conversion', 'DVD/Blu-ray authoring']],
-];
-
-$packages = [
-    ['name' => 'Quick Edit', 'accent' => '#2BACE2', 'featured' => false, 'price' => '$299', 'duration' => '2&ndash;3 days', 'bestFor' => 'Social media, short-form content, interviews', 'features' => ['Basic cut and trim', 'Color correction', 'Audio cleaning', 'One round of revisions']],
-    ['name' => 'Professional Edit', 'accent' => '#F99E1F', 'featured' => true, 'price' => '$799', 'duration' => '5&ndash;7 days', 'bestFor' => 'Corporate videos, promos, YouTube content', 'features' => ['Full editing with narrative structure', 'Color grading (cinematic)', 'Audio mixing', 'Custom graphics (titles, lower thirds)', '2 rounds of revisions']],
-    ['name' => 'Premium Production', 'accent' => '#8B5CF6', 'featured' => false, 'price' => '$2,499', 'duration' => '10&ndash;14 days', 'bestFor' => 'Documentaries, commercials, music videos, films', 'features' => ['Advanced multi-camera editing', 'Professional color grading', 'Full audio post-production', 'Custom motion graphics', 'VFX and compositing', '3 rounds of revisions']],
-];
-
-$addons = [
-    ['name' => 'Rush order (24&ndash;48 hrs)', 'price' => '+50%'],
-    ['name' => 'Original music composition', 'price' => '$400'],
-    ['name' => 'Voice-over recording', 'price' => '$150'],
-    ['name' => 'Additional revisions', 'price' => '$50/revision'],
-    ['name' => 'Multi-language captions', 'price' => '$100/language'],
 ];
 
 $software = [
@@ -72,7 +56,7 @@ $whyChoose = [
     ['icon' => 'pencil', 'title' => 'Creative Storytelling', 'description' => 'An editorial approach focused on pacing, rhythm and narrative.'],
     ['icon' => 'target', 'title' => 'Attention to Detail', 'description' => 'Every frame reviewed &mdash; nothing ships until it is right.'],
     ['icon' => 'clock', 'title' => 'On-Time Delivery', 'description' => 'Every time, without exception.'],
-    ['icon' => 'refresh', 'title' => 'Unlimited Revisions', 'description' => 'Available on select packages until you are fully satisfied.'],
+    ['icon' => 'refresh', 'title' => 'Unlimited Revisions', 'description' => 'Available on larger projects until you are fully satisfied.'],
     ['icon' => 'certificate', 'title' => 'Secure File Transfer', 'description' => 'End-to-end encrypted transfer for every project.'],
     ['icon' => 'codebrackets', 'title' => 'Industry-Standard Software', 'description' => 'Premiere Pro, DaVinci Resolve, After Effects and more.'],
     ['icon' => 'billboard', 'title' => 'Award-Winning Portfolio', 'description' => 'A track record of work our clients are proud to share.'],
@@ -103,11 +87,11 @@ $faqs = [
     ['question' => 'How do I send large files?', 'answer' => 'We provide secure FTP access for files over 50GB. For smaller files, use our cloud upload portal.'],
     ['question' => 'Can you match a specific style or video?', 'answer' => "Yes. Share reference videos and we'll replicate the style, pacing and grading."],
     ['question' => 'Do you provide stock footage or music?', 'answer' => 'Yes, we have access to licensed music and stock footage libraries.'],
-    ['question' => 'How many revisions do I get?', 'answer' => 'Package-dependent: Quick Edit (1), Professional (2), Premium (3). Additional revisions available.'],
+    ['question' => 'How many revisions do I get?', 'answer' => 'It depends on project scope, typically 1&ndash;3 rounds. Additional revisions available on request.'],
     ['question' => 'Do you do voice-overs?', 'answer' => 'Yes, we offer professional voice-over recording in multiple languages and accents.'],
     ['question' => 'Can you add subtitles?', 'answer' => 'Yes, we provide manual and AI-generated captions in multiple languages.'],
     ['question' => 'Is my footage secure?', 'answer' => 'Absolutely. We use encrypted file transfer and sign NDAs upon request.'],
-    ['question' => "What if I'm not satisfied?", 'answer' => "We work until you're 100% happy. Revisions are unlimited on premium packages."],
+    ['question' => "What if I'm not satisfied?", 'answer' => "We work until you're 100% happy. Revisions are unlimited on larger projects."],
     ['question' => 'Do you keep project files?', 'answer' => 'Yes, we archive projects for 30 days. Extended storage available upon request.'],
 ];
 
@@ -133,7 +117,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3 mb-4" data-animate data-delay="280">
                             <a href="contact.html" class="btn-hero-cta">Get a Custom Quote</a>
-                            <a href="#packages" class="btn-hero-cta">See Packages</a>
+                            <a href="#enquiry" class="btn-hero-cta">Send an Enquiry</a>
                         </div>
                         <div class="row row-cols-2 row-cols-sm-4 g-3 tutorial-stats" data-animate data-delay="320">
                             <?php foreach ($stats as $stat): ?>
@@ -199,61 +183,6 @@ $heroIcons = [
             </div>
          </section>
          <!--/ services we offer -->
-
-         <!-- post-production packages -->
-         <section class="who-we-are" id="packages">
-            <div class="bg-bubble bubble-blue" aria-hidden="true"></div>
-            <div class="bg-bubble bubble-green" aria-hidden="true"></div>
-            <div class="bg-bubble bubble-orange" aria-hidden="true"></div>
-            <div class="container-fluid nav-shell">
-                <div class="row mb-5">
-                    <div class="col-lg-7" data-animate>
-                        <p class="eyebrow">Post-Production Packages</p>
-                        <h2 class="section-heading">Pick the edit that fits your project</h2>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-3 g-4 mb-5">
-                    <?php foreach ($packages as $i => $pkg): ?>
-                    <div class="col" data-animate data-delay="<?php echo $i * 110; ?>">
-                        <div class="pricing-card<?php echo $pkg['featured'] ? ' pricing-card-featured' : ''; ?>" style="--accent:<?php echo $esc($pkg['accent']); ?>">
-                            <?php if ($pkg['featured']): ?>
-                            <span class="pricing-card-badge">Most Popular</span>
-                            <?php endif; ?>
-                            <h3 class="pricing-card-name"><?php echo $esc($pkg['name']); ?></h3>
-                            <div class="pricing-card-price">
-                                <span class="amount"><?php echo $esc($pkg['price']); ?></span>
-                                <span class="period">starting at</span>
-                            </div>
-                            <p class="pricing-card-duration">Turnaround: <?php echo $pkg['duration']; ?></p>
-                            <ul class="pricing-card-features">
-                                <?php foreach ($pkg['features'] as $feature): ?>
-                                <li><?php echo $checkIcon; ?><span><?php echo $esc($feature); ?></span></li>
-                                <?php endforeach; ?>
-                            </ul>
-                            <p class="pricing-card-bestfor"><strong>Best for:</strong> <?php echo $esc($pkg['bestFor']); ?></p>
-                            <a href="contact.html" class="btn-hero-cta">Get This Package</a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-                <div class="row">
-                    <div class="col-lg-7" data-animate>
-                        <div class="why-card mb-0">
-                            <h3>Add-Ons</h3>
-                            <div class="addon-list">
-                                <?php foreach ($addons as $addon): ?>
-                                <div class="addon-row">
-                                    <span class="addon-name"><?php echo $addon['name']; ?></span>
-                                    <span class="addon-price"><?php echo $addon['price']; ?></span>
-                                </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-         <!--/ post-production packages -->
 
          <!-- software & tools -->
          <section class="bottom-services-section">
@@ -477,11 +406,11 @@ $heroIcons = [
                         <ul class="footer-contact">
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                <span>Email: postproduction@mellowdigi.com</span>
+                                <span>Email: info@mellowdigi.com</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                <span>Phone: +91 98765 43210</span>
+                                <span>Phone: +91 77999 71112</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['network']; ?></svg>
@@ -546,15 +475,15 @@ $heroIcons = [
                             <ul class="footer-contact">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['pin']; ?></svg>
-                                    <span>123 Digital Avenue, Tech City, India &ndash; 110001</span>
+                                    <span>Hyderabad, Telangana</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                    <span>+91 98765 43210</span>
+                                    <span>+91 77999 71112</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                    <span>postproduction@mellowdigi.com</span>
+                                    <span>info@mellowdigi.com</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['webmobile']; ?></svg>
@@ -583,6 +512,7 @@ $heroIcons = [
             </div>
          </section>
          <!--/ contact -->
+        <?php include __DIR__ . '/components/enquiry-form.php'; ?>
      </main>
      <!--/ main -->
 

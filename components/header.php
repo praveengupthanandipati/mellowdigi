@@ -66,9 +66,9 @@ $esc = function ($value) {
         'description' => $pageDescription,
         'contactPoint' => [
             '@type' => 'ContactPoint',
-            'telephone' => '+91-98765-43210',
+            'telephone' => '+91-77999-71112',
             'contactType' => 'customer service',
-            'email' => 'hello@mellowdigi.com',
+            'email' => 'info@mellowdigi.com',
         ],
     ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
     ?>

@@ -347,6 +347,7 @@ $heroIcons = [
             </div>
          </section>
          <!--/ coming soon -->
+        <?php include __DIR__ . '/components/enquiry-form.php'; ?>
      </main>
      <!--/ main -->
 

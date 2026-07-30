@@ -108,7 +108,7 @@ $upcoming = [
 ];
 
 $engagement = [
-    ['icon' => 'mail', 'title' => 'Ask Questions', 'description' => 'Submit questions for upcoming guests &mdash; we feature the best in our interviews. Email interviews@mellowdigi.com.'],
+    ['icon' => 'mail', 'title' => 'Ask Questions', 'description' => 'Submit questions for upcoming guests &mdash; we feature the best in our interviews. Email info@mellowdigi.com.'],
     ['icon' => 'network', 'title' => 'Join the Discussion', 'description' => 'Comment on each interview, share your insights and connect with other professionals.'],
     ['icon' => 'users', 'title' => 'Suggest a Guest', 'description' => 'Who would you love to hear from? Nominate leaders you admire and help shape our lineup.'],
     ['icon' => 'megaphone', 'title' => 'Share Your Story', 'description' => 'How has an interview impacted your journey? Tag us on social media with #MellowDigiInterviews.'],
@@ -138,8 +138,8 @@ $resources = [
 $faqs = [
     ['question' => 'Are the interviews available for free?', 'answer' => 'Yes, all our interviews are completely free to access. We believe in democratizing leadership education.'],
     ['question' => 'How often do you release new interviews?', 'answer' => 'We release a new interview every week, typically on Thursdays.'],
-    ['question' => 'Can I suggest a guest for an interview?', 'answer' => 'Absolutely! We love hearing from our community. Email us at interviews@mellowdigi.com with your suggestion.'],
-    ['question' => "I'm an executive interested in being interviewed. How can I apply?", 'answer' => 'We\'re always looking for diverse voices. Please reach out to us at executive@mellowdigi.com with your background and the topics you\'d like to discuss.'],
+    ['question' => 'Can I suggest a guest for an interview?', 'answer' => 'Absolutely! We love hearing from our community. Email us at info@mellowdigi.com with your suggestion.'],
+    ['question' => "I'm an executive interested in being interviewed. How can I apply?", 'answer' => 'We\'re always looking for diverse voices. Please reach out to us at info@mellowdigi.com with your background and the topics you\'d like to discuss.'],
     ['question' => 'Are transcripts available for all interviews?', 'answer' => 'Yes, every interview includes a complete written transcript for easy reference and accessibility.'],
     ['question' => 'Can I use snippets from the interviews for my own content?', 'answer' => "You're welcome to share snippets with proper attribution to MellowDigi. Please refer to our content usage policy for guidelines."],
     ['question' => 'Do you offer corporate subscriptions for teams?', 'answer' => 'Yes, we offer corporate packages that include exclusive content, team workshops and live sessions. Contact our team for details.'],
@@ -538,7 +538,7 @@ $heroIcons = [
                 </div>
                 <p class="banner-text" data-animate data-delay="140">
                     Interested in becoming a partner or sponsor? Let's talk &mdash; email
-                    <a href="mailto:partnerships@mellowdigi.com">partnerships@mellowdigi.com</a>.
+                    <a href="mailto:info@mellowdigi.com">info@mellowdigi.com</a>.
                 </p>
             </div>
          </section>
@@ -650,11 +650,11 @@ $heroIcons = [
                         <ul class="footer-contact">
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['call']; ?></svg>
-                                <span>Call us: +91 98765 43210</span>
+                                <span>Call us: +91 77999 71112</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['mail']; ?></svg>
-                                <span>Email us: interviews@mellowdigi.com</span>
+                                <span>Email us: info@mellowdigi.com</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><?php echo $siteData['icons']['webmobile']; ?></svg>
@@ -673,6 +673,7 @@ $heroIcons = [
             </div>
          </section>
          <!--/ contact cta -->
+        <?php include __DIR__ . '/components/enquiry-form.php'; ?>
      </main>
      <!--/ main -->
 
