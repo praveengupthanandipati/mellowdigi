@@ -98,7 +98,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
                             <a href="portfolio.html" class="btn-hero-cta">View Our Portfolio</a>
-                            <a href="contact.html" class="btn-hero-cta">Book a Free Pitch Review</a>
+                            <a href="contact.php" class="btn-hero-cta">Book a Free Pitch Review</a>
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -262,7 +262,7 @@ $heroIcons = [
                             <li><strong><?php echo $esc($reason['title']); ?></strong> — <?php echo $esc($reason['description']); ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Presentations</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Presentations</a>
                     </div>
                 </div>
             </div>
@@ -318,8 +318,8 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Get a Custom Quote</a>
-                            <a href="contact.html" class="btn-hero-cta">Download Our Pitch Deck Checklist</a>
+                            <a href="contact.php" class="btn-hero-cta">Get a Custom Quote</a>
+                            <a href="contact.php" class="btn-hero-cta">Download Our Pitch Deck Checklist</a>
                         </div>
                     </div>
                 </div>

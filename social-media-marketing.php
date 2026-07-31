@@ -65,7 +65,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
                             <a href="portfolio.html" class="btn-hero-cta">See Our Work</a>
-                            <a href="contact.html" class="btn-hero-cta">Let's Talk About Your Goals</a>
+                            <a href="contact.php" class="btn-hero-cta">Let's Talk About Your Goals</a>
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -224,7 +224,7 @@ $heroIcons = [
                             <li><strong><?php echo $reason['title']; ?></strong> &mdash; <?php echo $reason['description']; ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Social</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Social</a>
                     </div>
                 </div>
             </div>
@@ -258,7 +258,7 @@ $heroIcons = [
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-12">
                         <div class="faq-accordion" id="faqAccordion" data-animate data-delay="100">
                             <?php foreach ($faqs as $i => $faq): ?>
                             <div class="faq-item">
@@ -326,8 +326,8 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Let's Get Started</a>
-                            <a href="contact.html" class="btn-hero-cta">Request a Free Audit</a>
+                            <a href="contact.php" class="btn-hero-cta">Let's Get Started</a>
+                            <a href="contact.php" class="btn-hero-cta">Request a Free Audit</a>
                         </div>
                     </div>
                 </div>

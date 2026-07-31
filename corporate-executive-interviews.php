@@ -610,7 +610,7 @@ $heroIcons = [
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-12">
                         <div class="faq-accordion" id="faqAccordion" data-animate data-delay="100">
                             <?php foreach ($faqs as $i => $faq): ?>
                             <div class="faq-item">
@@ -665,8 +665,8 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to be part of the conversation?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Get Involved Today</a>
-                            <a href="contact.html" class="btn-hero-cta">Suggest a Guest</a>
+                            <a href="contact.php" class="btn-hero-cta">Get Involved Today</a>
+                            <a href="contact.php" class="btn-hero-cta">Suggest a Guest</a>
                         </div>
                     </div>
                 </div>

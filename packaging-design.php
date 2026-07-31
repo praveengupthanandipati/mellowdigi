@@ -59,7 +59,7 @@ $heroIcons = [
                             carry it through the entire customer journey, from the first glance on a
                             shelf to the moment the package is opened.
                         </p>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="320">Let's Design Your Packaging</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="320">Let's Design Your Packaging</a>
                     </div>
                     <div class="col-lg-6 align-self-center">
                         <div class="service-icon-cycle single-icon" data-animate data-delay="180">
@@ -164,7 +164,7 @@ $heroIcons = [
                             <li><strong><?php echo $esc($reason['title']); ?></strong> — <?php echo $esc($reason['description']); ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Packaging</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Packaging</a>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@ $heroIcons = [
                     </div>
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
-                        <a href="contact.html" class="btn-hero-cta">Contact Us Now</a>
+                        <a href="contact.php" class="btn-hero-cta">Contact Us Now</a>
                     </div>
                 </div>
             </div>

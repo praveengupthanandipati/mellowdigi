@@ -26,7 +26,7 @@ include __DIR__ . '/components/header.php';
                             and digital marketing together under one roof, with a small, hands-on team
                             that's obsessed with getting the details right.
                         </p>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
                     </div>
                     <div class="col-lg-6">
                         <div class="emblem-stage" data-animate data-delay="180">

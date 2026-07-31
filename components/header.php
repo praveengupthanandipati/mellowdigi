@@ -129,19 +129,22 @@ $esc = function ($value) {
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="portfolio.php">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="solutions.html">Solutions</a>
+                            <a class="nav-link" href="solutions.php">Solutions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="clients.html">Our Clients</a>
+                            <a class="nav-link" href="clients.php">Our Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.php">Blog</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="events.php">Events</a>
                         </li>
                     </ul>
-                    <a class="btn-contact" href="contact.html">
+                    <a class="btn-contact" href="contact.php">
                         Contact
                         <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>

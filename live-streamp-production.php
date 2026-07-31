@@ -89,7 +89,7 @@ $heroIcons = [
                             audience.
                         </p>
                         <div class="d-flex flex-wrap gap-3 mb-4" data-animate data-delay="280">
-                            <a href="contact.html" class="btn-hero-cta">Get a Custom Quote</a>
+                            <a href="contact.php" class="btn-hero-cta">Get a Custom Quote</a>
                             <a href="#enquiry" class="btn-hero-cta">Send an Enquiry</a>
                         </div>
                         <div class="row row-cols-2 row-cols-sm-4 g-3 tutorial-stats" data-animate data-delay="320">
@@ -269,7 +269,7 @@ $heroIcons = [
                 <div class="row row-cols-1 row-cols-lg-3 g-4">
                     <?php foreach ($projects as $i => $project): ?>
                     <div class="col" data-animate data-delay="<?php echo $i * 110; ?>">
-                        <div class="project-card" style="--accent:<?php echo $esc($project['accent']); ?>">
+                        <div class="project-info-card" style="--accent:<?php echo $esc($project['accent']); ?>">
                             <div class="project-card-header">
                                 <h3><?php echo $esc($project['title']); ?></h3>
                             </div>
@@ -363,8 +363,8 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to go live?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Request a Quote</a>
-                            <a href="contact.html" class="btn-hero-cta">Book a Consultation</a>
+                            <a href="contact.php" class="btn-hero-cta">Request a Quote</a>
+                            <a href="contact.php" class="btn-hero-cta">Book a Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@ $heroIcons = [
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-12">
                         <div class="faq-accordion" id="faqAccordion" data-animate data-delay="100">
                             <?php foreach ($faqs as $i => $faq): ?>
                             <div class="faq-item">

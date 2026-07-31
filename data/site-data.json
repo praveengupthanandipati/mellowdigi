@@ -148,14 +148,13 @@
         { "accent": "#14B8A6", "title": "Built Around Your Feedback", "text": "Short feedback loops mean you see progress early and often, not just a reveal at the very end." }
     ],
     "footer": {
-        "quickLinks": [
-            { "label": "Home", "url": "index.php" },
-            { "label": "About", "url": "about.html" },
-            { "label": "Services", "url": "services.html" },
-            { "label": "Portfolio", "url": "portfolio.html" },
-            { "label": "Solutions", "url": "solutions.html" },
-            { "label": "Our Clients", "url": "clients.html" },
-            { "label": "Blog", "url": "blog.html" }
+        "quickLinks": [           
+            { "label": "About", "url": "about.php" },           
+            { "label": "Portfolio", "url": "portfolio.php" },
+            { "label": "Solutions", "url": "solutions.php" },
+            { "label": "Our Clients", "url": "clients.php" },
+            { "label": "Blog", "url": "blog.html" },
+             { "label": "Events", "url": "events.php" }
         ],
         "services": [
             { "label": "Brand Strategy &amp; Identity", "url": "services.html" },

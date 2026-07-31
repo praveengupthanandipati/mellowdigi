@@ -49,7 +49,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
                             <a href="portfolio.html" class="btn-hero-cta">See Our Portfolio</a>
-                            <a href="contact.html" class="btn-hero-cta">Stop Looking Like Everyone Else</a>
+                            <a href="contact.php" class="btn-hero-cta">Stop Looking Like Everyone Else</a>
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -154,7 +154,7 @@ $heroIcons = [
                             <li><strong><?php echo $esc($payoff['title']); ?></strong> &mdash; <?php echo $esc($payoff['description']); ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Corporate Photography</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Corporate Photography</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@ $heroIcons = [
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-                            <a href="contact.html" class="btn-hero-cta">Inquire Now</a>
+                            <a href="contact.php" class="btn-hero-cta">Inquire Now</a>
                         </div>
                     </div>
                 </div>

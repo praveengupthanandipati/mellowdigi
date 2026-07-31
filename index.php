@@ -23,7 +23,7 @@ include __DIR__ . '/components/header.php';
                             From photography and video to branding, print, web development and digital
                             marketing — MellowDigi is the complete creative team behind ambitious brands.
                         </p>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="320">Let's Connect</a>
                     </div>
                     <div class="col-lg-7 align-self-center">
                         <div class="service-icon-cycle" data-animate data-delay="200">
@@ -165,7 +165,7 @@ include __DIR__ . '/components/header.php';
                             <li>Pricing that fits early-stage budgets and scales as you grow</li>
                             <li>Direct access to your project team, from kickoff to launch</li>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="360">Let's Talk About Your Startup</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="360">Let's Talk About Your Startup</a>
                     </div>
                 </div>
             </div>

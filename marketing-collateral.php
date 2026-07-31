@@ -108,7 +108,7 @@ $heroIcons = [
                         </p>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
                             <a href="portfolio.html" class="btn-hero-cta">Explore Our Work</a>
-                            <a href="contact.html" class="btn-hero-cta">Let's Talk</a>
+                            <a href="contact.php" class="btn-hero-cta">Let's Talk</a>
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -276,7 +276,7 @@ $heroIcons = [
                             <li><strong><?php echo $esc($reason['title']); ?></strong> — <?php echo $esc($reason['description']); ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="contact.html" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Collateral</a>
+                        <a href="contact.php" class="btn-hero-cta" data-animate data-delay="280">Let's Talk Collateral</a>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@ $heroIcons = [
                     </div>
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
-                        <a href="contact.html" class="btn-hero-cta">Get a Free Consultation</a>
+                        <a href="contact.php" class="btn-hero-cta">Get a Free Consultation</a>
                     </div>
                 </div>
             </div>

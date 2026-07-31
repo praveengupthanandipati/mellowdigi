@@ -53,7 +53,7 @@
                         </li>
                         <?php endforeach; ?>
                     </ul>
-                    <a href="contact.html" class="btn-hero-cta footer-cta">Let's Connect</a>
+                    <a href="contact.php" class="btn-hero-cta footer-cta">Let's Connect</a>
                 </div>
             </div>
         </div>

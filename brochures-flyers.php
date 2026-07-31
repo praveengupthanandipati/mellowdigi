@@ -65,7 +65,7 @@ $heroIcons = [
                             <?php endforeach; ?>
                         </ul>
                         <div class="d-flex flex-wrap gap-3" data-animate data-delay="320">
-                            <a href="contact.html" class="btn-hero-cta">Get a Quote</a>
+                            <a href="contact.php" class="btn-hero-cta">Get a Quote</a>
                             <a href="#enquiry" class="btn-hero-cta">Send an Enquiry</a>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ $heroIcons = [
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-12">
                         <div class="faq-accordion" id="faqAccordion" data-animate data-delay="100">
                             <?php foreach ($faqs as $i => $faq): ?>
                             <div class="faq-item">
@@ -238,7 +238,7 @@ $heroIcons = [
                     </div>
                     <div class="col-lg-5 text-lg-end" data-animate data-delay="150">
                         <p class="founder-bio">Ready to start?</p>
-                        <a href="contact.html" class="btn-hero-cta">Get a Free Quote Today</a>
+                        <a href="contact.php" class="btn-hero-cta">Get a Free Quote Today</a>
                     </div>
                 </div>
             </div>
