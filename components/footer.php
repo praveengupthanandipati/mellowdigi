@@ -61,8 +61,8 @@
             <div class="container-fluid nav-shell footer-bottom-inner">
                 <p>&copy; <?php echo date('Y'); ?> MellowDigi. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy.php">Privacy Policy</a>
+                    <a href="terms.php">Terms of Service</a>
                 </div>
             </div>
         </div>
