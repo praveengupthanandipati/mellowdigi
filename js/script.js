@@ -174,3 +174,38 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+// Legal pages: highlight the table-of-contents link for the section being read.
+document.addEventListener('DOMContentLoaded', function () {
+    var tocLinks = document.querySelectorAll('.legal-toc-nav a[href^="#"]');
+    if (!tocLinks.length || !('IntersectionObserver' in window)) return;
+
+    var linkFor = {};
+    var sections = [];
+    tocLinks.forEach(function (link) {
+        var id = decodeURIComponent(link.getAttribute('href').slice(1));
+        var section = document.getElementById(id);
+        if (section) {
+            linkFor[id] = link;
+            sections.push(section);
+        }
+    });
+
+    function setActive(id) {
+        tocLinks.forEach(function (link) { link.classList.remove('is-active'); });
+        if (linkFor[id]) linkFor[id].classList.add('is-active');
+    }
+
+    // A heading counts as "current" once it passes the top fifth of the screen.
+    var observer = new IntersectionObserver(function () {
+        var current = sections[0];
+        sections.forEach(function (section) {
+            if (section.getBoundingClientRect().top <= window.innerHeight * 0.2) current = section;
+        });
+        setActive(current.id);
+    }, { rootMargin: '0px 0px -80% 0px', threshold: [0, 1] });
+
+    sections.forEach(function (section) { observer.observe(section); });
+    setActive(sections[0].id);
+});
