@@ -95,7 +95,7 @@ $events = [
                     <?php foreach ($events as $i => $event): ?>
                     <div class="col-12" data-animate data-delay="<?php echo ($i % 3) * 90; ?>">
                         <div class="event-card" style="--accent:<?php echo $esc($event['accent']); ?>">
-                            <div class="row g-0 align-items-center">
+                            <div class="row g-0 align-items-stretch">
                                 <div class="col-lg-4">
                                     <div class="event-card-media">
                                         <img src="<?php echo $esc($event['image']); ?>" alt="<?php echo $esc($event['title']); ?>" loading="lazy">

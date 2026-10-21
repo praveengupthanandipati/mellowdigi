@@ -1,5 +1,6 @@
 <?php
-$enquiryCurrentFile = isset($pageUrl) ? basename(parse_url($pageUrl, PHP_URL_PATH)) : '';
+// Current page file (set in header.php), used to pre-select this service.
+$enquiryCurrentFile = $currentPage ?? '';
 ?>
          <!-- enquiry form -->
          <section class="bottom-services-section" id="enquiry">

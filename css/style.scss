@@ -176,9 +176,12 @@ h1, h2, h3, .navbar-brand {
         padding: 10px 16px !important;
         @include transition($transition-smooth);
 
-        &:hover,
-        &.active {
+        &:hover {
             color: $nav-link-hover;
+        }
+
+        &.active {
+            color: $secondary;
         }
     }
 
@@ -198,6 +201,12 @@ h1, h2, h3, .navbar-brand {
         @include transition($transition-smooth);
 
         svg { @include transition(transform 0.3s ease); }
+
+        &.active {
+            color: $dark;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
 
         &:hover {
             background-color: $secondary;
@@ -283,6 +292,11 @@ h1, h2, h3, .navbar-brand {
                 color: $white;
                 background: rgba(255, 255, 255, 0.08);
                 border-color: rgba(255, 255, 255, 0.18);
+            }
+
+            &.active {
+                color: $secondary;
+                border-color: $secondary;
             }
         }
     }
@@ -1717,4 +1731,705 @@ h1, h2, h3, .navbar-brand {
     @media (max-width: 991.98px) {
         padding: 0 22px 22px;
     }
+}
+
+/* Services page: keep section titles clear of the fixed header on anchor jumps */
+.services-category {
+    scroll-margin-top: $header-h-desktop;
+
+    @include tablet {
+        scroll-margin-top: $header-h-mobile;
+    }
+}
+
+/* ==========================================================================
+   Card icons, client logos & contact icons (clients page and similar)
+   ========================================================================== */
+// Icon tile inside .why-card (previously unstyled outside .popular-service-card)
+.why-card .popular-service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--accent, #{$secondary}), color-mix(in srgb, var(--accent, #{$secondary}) 60%, #{$white}));
+    color: $white;
+    box-shadow: 0 10px 24px -10px var(--accent, #{$secondary});
+    flex-shrink: 0;
+
+    svg { width: 26px; height: 26px; }
+}
+
+.client-logo-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 28px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    @include transition($transition-smooth);
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent, #{$secondary});
+    }
+}
+
+.client-logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, var(--accent, #{$secondary}), color-mix(in srgb, var(--accent, #{$secondary}) 60%, #{$white}));
+    box-shadow: 0 10px 24px -10px var(--accent, #{$secondary});
+    color: $white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.client-logo-name {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+// Contact list inside a card: one brand colour per icon
+.why-card .footer-contact li {
+    align-items: center;
+
+    svg { margin-top: 0; }
+
+    &:nth-child(4n + 1) svg { color: #2BACE2; }
+    &:nth-child(4n + 2) svg { color: #3DB54A; }
+    &:nth-child(4n + 3) svg { color: #F99E1F; }
+    &:nth-child(4n + 4) svg { color: #8B5CF6; }
+}
+
+/* ==========================================================================
+   Article / tutorial cards (blog, tutorials), hero stats, add-on rows
+   ========================================================================== */
+.tutorial-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px 24px;
+    @include transition($transition-smooth);
+
+    // Thin accent bar along the top edge
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent, #{$secondary}), transparent);
+    }
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent, #{$secondary});
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+        .tutorial-card-icon { transform: rotate(-6deg) scale(1.05); }
+    }
+
+    h6 {
+        color: $white;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin-bottom: 18px;
+    }
+
+    .popular-service-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: auto;
+        color: var(--accent, #{$secondary});
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+
+        span { display: inline-block; @include transition(transform 0.3s ease); }
+
+        &:hover span { transform: translateX(4px); }
+    }
+}
+
+.tutorial-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tutorial-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--accent, #{$secondary}), color-mix(in srgb, var(--accent, #{$secondary}) 60%, #{$white}));
+    box-shadow: 0 10px 24px -10px var(--accent, #{$secondary});
+    color: $white;
+    @include transition($transition-smooth);
+
+    svg { width: 26px; height: 26px; }
+}
+
+.tutorial-category-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: right;
+    color: var(--accent, #{$secondary});
+    background: color-mix(in srgb, var(--accent, #{$secondary}) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent, #{$secondary}) 35%, transparent);
+}
+
+.tutorial-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 16px;
+    margin-bottom: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    // When it is the last item, sit at the bottom of the card
+    &:last-child {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+}
+
+.tutorial-level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.tutorial-duration {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        color: var(--accent, #{$secondary});
+    }
+}
+
+// Compact stat tiles in page banners
+.tutorial-stats {
+    margin-top: 8px;
+
+    .who-stat {
+        height: 100%;
+        margin-bottom: 0;
+        padding: 16px 14px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+
+        h3 {
+            font-size: 1.6rem;
+            @include tablet-sm { font-size: 1.25rem; }
+        }
+
+        p {
+            font-size: 0.72rem;
+            line-height: 1.4;
+        }
+    }
+}
+
+// Label / value rows (business hours, add-ons, pricing)
+.addon-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.addon-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+
+    &:first-child { padding-top: 0; }
+    &:last-child { border-bottom: 0; padding-bottom: 0; }
+}
+
+.addon-name {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.92rem;
+}
+
+.addon-price {
+    color: var(--accent, #{$secondary});
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
+}
+
+// Whole card as a link (blog)
+a.tutorial-card {
+    color: inherit;
+    text-decoration: none;
+
+    h6 { @include transition(color 0.3s ease); }
+
+    &:hover h6 { color: var(--accent, #{$secondary}); }
+
+    &:focus-visible {
+        outline: 2px solid var(--accent, #{$secondary});
+        outline-offset: 3px;
+    }
+}
+
+/* ==========================================================================
+   Event cards (events page)
+   ========================================================================== */
+.event-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    @include transition($transition-smooth);
+
+    &:hover {
+        border-color: var(--accent, #{$secondary});
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+        .event-card-media img { transform: scale(1.05); }
+    }
+}
+
+.event-card-media {
+    position: relative;
+    height: 100%;
+    min-height: 260px;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition(transform 0.6s ease);
+    }
+
+    // Soft fade into the card on large screens
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, transparent 60%, rgba(18, 18, 18, 0.35));
+        pointer-events: none;
+    }
+
+    @include tablet {
+        min-height: 220px;
+        &::after { background: linear-gradient(180deg, transparent 60%, rgba(18, 18, 18, 0.35)); }
+    }
+}
+
+.event-card-date-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 68px;
+    border-radius: 14px;
+    background: var(--accent, #{$secondary});
+    box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.6);
+    color: $white;
+    line-height: 1;
+    text-align: center;
+
+    .event-day {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .event-month {
+        margin-top: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+}
+
+.event-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 32px 36px;
+
+    @include tablet { padding: 24px 22px 26px; }
+
+    .btn-hero-cta { margin-top: auto; }
+}
+
+.event-card-title {
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 14px;
+
+    @include tablet { font-size: 1.2rem; }
+}
+
+.event-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-bottom: 16px;
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.88rem;
+        line-height: 1.4;
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        color: var(--accent, #{$secondary});
+    }
+}
+
+.event-card-desc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    max-width: 640px;
+}
+
+/* ==========================================================================
+   Contact page & forms (contact form, enquiry form)
+   ========================================================================== */
+$form-focus: rgba(245, 129, 31, 0.18);
+$form-error: #F43F5E;
+
+// Contact info cards
+.contact-info-value {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+a.contact-info-value {
+    color: $white;
+    text-decoration: none;
+    @include transition(color 0.3s ease);
+
+    &:hover { color: var(--accent, #{$secondary}); }
+}
+
+// Form panel
+.contact-form-card {
+    height: 100%;
+    padding: 36px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    @include tablet-sm { padding: 24px 20px; }
+}
+
+.enquiry-label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.enquiry-input {
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    color: $white;
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    @include transition((border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease));
+
+    &::placeholder { color: rgba(255, 255, 255, 0.35); }
+
+    &:hover { border-color: rgba(255, 255, 255, 0.22); }
+
+    &:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.06);
+        border-color: $secondary;
+        box-shadow: 0 0 0 4px $form-focus;
+    }
+
+    // Only flag fields after the visitor has interacted with them
+    &:user-invalid {
+        border-color: $form-error;
+        box-shadow: 0 0 0 4px rgba(244, 63, 94, 0.15);
+    }
+
+    // Keep browser autofill on the dark theme
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-text-fill-color: $white;
+        -webkit-box-shadow: 0 0 0 1000px #1c1c1c inset;
+        caret-color: $white;
+        transition: background-color 9999s ease-out;
+    }
+}
+
+.enquiry-textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.enquiry-select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 44px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f5811f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+
+    optgroup {
+        background: #1c1c1c;
+        color: $secondary;
+        font-weight: 600;
+    }
+
+    option {
+        background: #1c1c1c;
+        color: $white;
+        font-weight: 400;
+    }
+}
+
+// Buttons used as <button> (form submit / reset)
+button.btn-hero-cta {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+
+    &:focus-visible {
+        outline: 2px solid $secondary;
+        outline-offset: 3px;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: wait;
+        transform: none;
+    }
+}
+
+.form-error-message {
+    margin: 18px 0 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: rgba(244, 63, 94, 0.1);
+    border: 1px solid rgba(244, 63, 94, 0.35);
+    color: #fda4af;
+    font-size: 0.9rem;
+}
+
+.form-success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100%;
+    padding: 40px 16px;
+
+    &[hidden] { display: none; }
+
+    h3 {
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 420px;
+        margin-bottom: 24px;
+    }
+}
+
+.form-success-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3DB54A, color-mix(in srgb, #3DB54A 60%, #{$white}));
+    box-shadow: 0 12px 28px -10px #3DB54A;
+    color: $white;
+
+    svg { width: 34px; height: 34px; }
+}
+
+/* ==========================================================================
+   Portfolio cards
+   ========================================================================== */
+.portfolio-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    @include transition($transition-smooth);
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent, #{$secondary});
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+        .portfolio-card-media img { transform: scale(1.06); }
+    }
+}
+
+.portfolio-card-media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition(transform 0.6s ease);
+    }
+
+    // Accent line where the image meets the text
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent, #{$secondary}), transparent);
+    }
+}
+
+.portfolio-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 20px 22px 22px;
+}
+
+.portfolio-card-work {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--accent, #{$secondary});
+    background: color-mix(in srgb, var(--accent, #{$secondary}) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent, #{$secondary}) 35%, transparent);
+}
+
+.portfolio-card-title {
+    color: $white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.portfolio-card-client {
+    margin: auto 0 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.88rem;
 }

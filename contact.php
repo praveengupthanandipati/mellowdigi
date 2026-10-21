@@ -89,7 +89,7 @@ $contactInfo = [
          </section>
          <!--/ contact info -->
 
-         <!-- contact form & map -->
+         <!-- contact form -->
          <section class="bottom-services-section">
             <div class="container-fluid nav-shell">
                 <div class="row mb-5">
@@ -99,7 +99,7 @@ $contactInfo = [
                     </div>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-6" data-animate>
+                    <div class="col-lg-9" data-animate>
                         <div class="contact-form-card">
                             <form class="enquiry-form" id="contactForm" novalidate>
                                 <div class="row g-3">
@@ -139,15 +139,10 @@ $contactInfo = [
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-animate data-delay="100">
-                        <div class="contact-map-wrap">
-                            <iframe src="https://maps.google.com/maps?q=Hyderabad,Telangana,India&z=13&output=embed" title="MellowDigi office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
          </section>
-         <!--/ contact form & map -->
+         <!--/ contact form -->
      </main>
      <!--/ main -->
 

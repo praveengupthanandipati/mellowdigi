@@ -231,7 +231,7 @@ $communityQuotes = [
                 <div class="row row-cols-1 row-cols-lg-2 g-4">
                     <?php foreach ($communityQuotes as $i => $q): ?>
                     <div class="col" data-animate data-delay="<?php echo ($i % 2) * 110; ?>">
-                        <div class="why-card h-100" style="--accent:#f5811f">
+                        <div class="why-card h-100" style="--accent:<?php echo ['#2BACE2', '#3DB54A', '#F99E1F', '#8B5CF6', '#F43F5E', '#14B8A6'][$i % 6]; ?>">
                             <span class="popular-service-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><?php echo $siteData['icons']['quote']; ?></svg>
                             </span>

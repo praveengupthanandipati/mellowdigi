@@ -123,21 +123,21 @@
         { "image": "img/recent-projects/home_4.jpg", "title": "Logistics Brand System", "category": "Brand Strategy &amp; Identity — Concept" }
     ],
     "popularServices": [
-        { "accent": "#2BACE2", "icon": "briefcase", "title": "Corporate Branding &amp; Identity", "description": "Cohesive brand identities that make your company instantly recognizable.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "pencil", "title": "Logo Design &amp; Visual Systems", "description": "A distinctive mark and visual language built to scale everywhere.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "box", "title": "Packaging Design", "description": "Shelf-ready packaging that turns heads and builds brand recall.", "link": "services.html" },
-        { "accent": "#8B5CF6", "icon": "network", "title": "Social Media Marketing &amp; Management", "description": "Scroll-stopping content and community management that grows your audience.", "link": "services.html" },
-        { "accent": "#F43F5E", "icon": "search", "title": "Search Engine Optimization (SEO)", "description": "Technical and content SEO that gets your brand found and ranked.", "link": "services.html" },
-        { "accent": "#14B8A6", "icon": "layout", "title": "UI/UX Design &amp; Prototyping", "description": "Intuitive interfaces and user flows crafted around real behavior.", "link": "services.html" },
-        { "accent": "#2BACE2", "icon": "codebrackets", "title": "Custom Web Development", "description": "Fast, reliable websites engineered to scale with your business.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "phone", "title": "Mobile App Development (iOS &amp; Android)", "description": "Native and cross-platform apps built for performance and delight.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "camera", "title": "Wedding &amp; Events Photography", "description": "Candid, cinematic coverage of your big day, from ceremony to reception.", "link": "services.html" },
-        { "accent": "#8B5CF6", "icon": "camera", "title": "Product &amp; Food Photography", "description": "Crisp product and food photography that makes every shot shelf-ready.", "link": "services.html" },
-        { "accent": "#F43F5E", "icon": "video", "title": "Brand Documentaries &amp; Storytelling", "description": "Long-form brand films that capture your story and mission.", "link": "services.html" },
-        { "accent": "#14B8A6", "icon": "video", "title": "Promotional &amp; Commercial Videos", "description": "High-impact promo videos built to convert across every channel.", "link": "services.html" },
-        { "accent": "#2BACE2", "icon": "clapperboard", "title": "Professional Video Editing &amp; Post-Production", "description": "Polished cuts, color grading and sound design for every kind of video.", "link": "services.html" },
-        { "accent": "#3DB54A", "icon": "idcard", "title": "Business Cards &amp; Stationery", "description": "Memorable business cards and stationery that leave a lasting impression.", "link": "services.html" },
-        { "accent": "#F99E1F", "icon": "billboard", "title": "Outdoor Posters &amp; Banners", "description": "Bold outdoor posters and banners designed to stand out and get noticed.", "link": "services.html" }
+        { "accent": "#2BACE2", "icon": "briefcase", "title": "Corporate Branding &amp; Identity", "description": "Cohesive brand identities that make your company instantly recognizable.", "link": "services.php" },
+        { "accent": "#3DB54A", "icon": "pencil", "title": "Logo Design &amp; Visual Systems", "description": "A distinctive mark and visual language built to scale everywhere.", "link": "services.php" },
+        { "accent": "#F99E1F", "icon": "box", "title": "Packaging Design", "description": "Shelf-ready packaging that turns heads and builds brand recall.", "link": "services.php" },
+        { "accent": "#8B5CF6", "icon": "network", "title": "Social Media Marketing &amp; Management", "description": "Scroll-stopping content and community management that grows your audience.", "link": "services.php" },
+        { "accent": "#F43F5E", "icon": "search", "title": "Search Engine Optimization (SEO)", "description": "Technical and content SEO that gets your brand found and ranked.", "link": "services.php" },
+        { "accent": "#14B8A6", "icon": "layout", "title": "UI/UX Design &amp; Prototyping", "description": "Intuitive interfaces and user flows crafted around real behavior.", "link": "services.php" },
+        { "accent": "#2BACE2", "icon": "codebrackets", "title": "Custom Web Development", "description": "Fast, reliable websites engineered to scale with your business.", "link": "services.php" },
+        { "accent": "#3DB54A", "icon": "phone", "title": "Mobile App Development (iOS &amp; Android)", "description": "Native and cross-platform apps built for performance and delight.", "link": "services.php" },
+        { "accent": "#F99E1F", "icon": "camera", "title": "Wedding &amp; Events Photography", "description": "Candid, cinematic coverage of your big day, from ceremony to reception.", "link": "services.php" },
+        { "accent": "#8B5CF6", "icon": "camera", "title": "Product &amp; Food Photography", "description": "Crisp product and food photography that makes every shot shelf-ready.", "link": "services.php" },
+        { "accent": "#F43F5E", "icon": "video", "title": "Brand Documentaries &amp; Storytelling", "description": "Long-form brand films that capture your story and mission.", "link": "services.php" },
+        { "accent": "#14B8A6", "icon": "video", "title": "Promotional &amp; Commercial Videos", "description": "High-impact promo videos built to convert across every channel.", "link": "services.php" },
+        { "accent": "#2BACE2", "icon": "clapperboard", "title": "Professional Video Editing &amp; Post-Production", "description": "Polished cuts, color grading and sound design for every kind of video.", "link": "services.php" },
+        { "accent": "#3DB54A", "icon": "idcard", "title": "Business Cards &amp; Stationery", "description": "Memorable business cards and stationery that leave a lasting impression.", "link": "services.php" },
+        { "accent": "#F99E1F", "icon": "billboard", "title": "Outdoor Posters &amp; Banners", "description": "Bold outdoor posters and banners designed to stand out and get noticed.", "link": "services.php" }
     ],
     "ourPromises": [
         { "accent": "#2BACE2", "title": "Direct Access, No Middlemen", "text": "You work with the person actually doing the work — usually the founder — not an account manager relaying messages back and forth." },
@@ -153,16 +153,16 @@
             { "label": "Portfolio", "url": "portfolio.php" },
             { "label": "Solutions", "url": "solutions.php" },
             { "label": "Our Clients", "url": "clients.php" },
-            { "label": "Blog", "url": "blog.html" },
+            { "label": "Blog", "url": "blog.php" },
              { "label": "Events", "url": "events.php" }
         ],
         "services": [
-            { "label": "Brand Strategy &amp; Identity", "url": "services.html" },
-            { "label": "Digital Marketing &amp; Growth", "url": "services.html" },
-            { "label": "Web &amp; Mobile Solutions", "url": "services.html" },
-            { "label": "Photography", "url": "services.html" },
-            { "label": "Video &amp; Motion Production", "url": "services.html" },
-            { "label": "Print &amp; Physical Media", "url": "services.html" }
+            { "label": "Brand Strategy &amp; Identity", "url": "services.php#brand-strategy-identity" },
+            { "label": "Digital Marketing &amp; Growth", "url": "services.php#digital-marketing-growth" },
+            { "label": "Web &amp; Mobile Solutions", "url": "services.php#web-mobile-solutions" },
+            { "label": "Photography", "url": "services.php#photography" },
+            { "label": "Video &amp; Motion Production", "url": "services.php#video-motion-production" },
+            { "label": "Print &amp; Physical Media", "url": "services.php#print-physical-media" }
         ],
         "socials": [
             { "icon": "instagram", "label": "Instagram", "url": "#" },

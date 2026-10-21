@@ -176,7 +176,7 @@ $heroIcons = [
                                     <?php echo $esc($tut['duration']); ?>
                                 </span>
                             </div>
-                            <a href="blog.html" class="popular-service-link">Start Learning <span>&rarr;</span></a>
+                            <a href="blog.php" class="popular-service-link">Start Learning <span>&rarr;</span></a>
                         </div>
                     </div>
                     <?php endforeach; ?>

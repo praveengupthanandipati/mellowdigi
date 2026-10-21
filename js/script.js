@@ -1,3 +1,36 @@
+// Clean URLs: hide the .php extension in the browser (about.php -> about,
+// index.php -> /). The server side of this lives in .htaccess, which maps
+// the clean URL back to the .php file so refreshes and bookmarks still work.
+(function () {
+    function cleanPath(path) {
+        return path.replace(/\/index\.php$/, '/').replace(/\.php$/, '');
+    }
+
+    // Address bar
+    var current = window.location.pathname;
+    var clean = cleanPath(current);
+    if (clean !== current && window.history.replaceState) {
+        window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+
+    // Internal links (same-site only; external, mailto: and tel: links are left alone)
+    function cleanLinks() {
+        document.querySelectorAll('a[href]').forEach(function (link) {
+            var url;
+            try { url = new URL(link.getAttribute('href'), window.location.href); } catch (e) { return; }
+            if (url.origin !== window.location.origin || !/\.php$/.test(url.pathname)) return;
+            url.pathname = cleanPath(url.pathname);
+            link.setAttribute('href', url.href);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', cleanLinks);
+    } else {
+        cleanLinks();
+    }
+})();
+
 window.addEventListener('load', function () {
     var loader = document.getElementById('pageLoader');
     if (loader) loader.classList.add('is-loaded');

@@ -311,7 +311,7 @@ $heroIcons = [
                                 </span>
                                 <p>&ldquo;<?php echo $esc($item['quote']); ?>&rdquo;</p>
                             </div>
-                            <a href="blog.html" class="popular-service-link">View Full Interview <span>&rarr;</span></a>
+                            <a href="blog.php" class="popular-service-link">View Full Interview <span>&rarr;</span></a>
                         </div>
                     </div>
                     <?php endforeach; ?>

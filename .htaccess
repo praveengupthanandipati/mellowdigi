@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+# Serve extensionless URLs from their .php file, e.g. /about -> about.php.
+# The browser address bar is cleaned up by js/script.js.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

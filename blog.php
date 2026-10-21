@@ -18,14 +18,14 @@ $stats = [
 ];
 
 $blogPosts = [
-    ['icon' => 'palette', 'accent' => '#2BACE2', 'category' => 'Graphics', 'date' => 'Jul 12, 2026', 'readTime' => '6 min read', 'title' => '10 Graphic Design Trends Shaping Brands in 2026', 'excerpt' => 'From bold maximalism to AI-assisted layouts, here are the visual trends brands are using to stand out this year.'],
-    ['icon' => 'network', 'accent' => '#3DB54A', 'category' => 'Digital Solutions', 'date' => 'Jul 5, 2026', 'readTime' => '7 min read', 'title' => 'How Digital Transformation Is Reshaping Small Businesses', 'excerpt' => 'Cloud tools, automation and smart integrations are levelling the playing field for small and growing brands.'],
-    ['icon' => 'search', 'accent' => '#F99E1F', 'category' => 'Digital Solutions', 'date' => 'Jun 28, 2026', 'readTime' => '5 min read', 'title' => 'SEO vs. Paid Ads: Where Should Your Budget Go First?', 'excerpt' => 'A practical breakdown of when to invest in organic growth and when paid campaigns deliver faster results.'],
-    ['icon' => 'video', 'accent' => '#8B5CF6', 'category' => 'Video Editing', 'date' => 'Jun 21, 2026', 'readTime' => '8 min read', 'title' => '5 Editing Techniques That Instantly Elevate Your Footage', 'excerpt' => 'Simple color grading, pacing and sound design tweaks that separate amateur cuts from professional ones.'],
-    ['icon' => 'camera', 'accent' => '#F43F5E', 'category' => 'Photography', 'date' => 'Jun 14, 2026', 'readTime' => '6 min read', 'title' => 'Behind the Lens: Composition Tips for Product Photography', 'excerpt' => 'Lighting, angles and styling techniques that make product shots convert better on every platform.'],
-    ['icon' => 'clapperboard', 'accent' => '#14B8A6', 'category' => 'Videography', 'date' => 'Jun 7, 2026', 'readTime' => '7 min read', 'title' => 'Planning a Corporate Video Shoot: A Pre-Production Checklist', 'excerpt' => 'Everything to lock down before the cameras roll, from shot lists to talent releases and location scouting.'],
-    ['icon' => 'printer', 'accent' => '#2BACE2', 'category' => 'Print Media', 'date' => 'May 30, 2026', 'readTime' => '5 min read', 'title' => 'Why Print Still Matters in a Digital-First World', 'excerpt' => 'Business cards, packaging and brochures still shape first impressions &mdash; here is how to make them count.'],
-    ['icon' => 'codebrackets', 'accent' => '#3DB54A', 'category' => 'Web &amp; Mobile Solutions', 'date' => 'May 23, 2026', 'readTime' => '9 min read', 'title' => 'Responsive Design Mistakes That Are Costing You Conversions', 'excerpt' => 'Common layout, speed and navigation pitfalls that quietly push mobile visitors away from your site.'],
+    ['link' => '#', 'accent' => '#2BACE2', 'category' => 'Graphics', 'date' => 'Jul 12, 2026', 'readTime' => '6 min read', 'title' => '10 Graphic Design Trends Shaping Brands in 2026', 'excerpt' => 'From bold maximalism to AI-assisted layouts, here are the visual trends brands are using to stand out this year.'],
+    ['link' => '#', 'accent' => '#3DB54A', 'category' => 'Digital Solutions', 'date' => 'Jul 5, 2026', 'readTime' => '7 min read', 'title' => 'How Digital Transformation Is Reshaping Small Businesses', 'excerpt' => 'Cloud tools, automation and smart integrations are levelling the playing field for small and growing brands.'],
+    ['link' => '#', 'accent' => '#F99E1F', 'category' => 'Digital Solutions', 'date' => 'Jun 28, 2026', 'readTime' => '5 min read', 'title' => 'SEO vs. Paid Ads: Where Should Your Budget Go First?', 'excerpt' => 'A practical breakdown of when to invest in organic growth and when paid campaigns deliver faster results.'],
+    ['link' => '#', 'accent' => '#8B5CF6', 'category' => 'Video Editing', 'date' => 'Jun 21, 2026', 'readTime' => '8 min read', 'title' => '5 Editing Techniques That Instantly Elevate Your Footage', 'excerpt' => 'Simple color grading, pacing and sound design tweaks that separate amateur cuts from professional ones.'],
+    ['link' => '#', 'accent' => '#F43F5E', 'category' => 'Photography', 'date' => 'Jun 14, 2026', 'readTime' => '6 min read', 'title' => 'Behind the Lens: Composition Tips for Product Photography', 'excerpt' => 'Lighting, angles and styling techniques that make product shots convert better on every platform.'],
+    ['link' => '#', 'accent' => '#14B8A6', 'category' => 'Videography', 'date' => 'Jun 7, 2026', 'readTime' => '7 min read', 'title' => 'Planning a Corporate Video Shoot: A Pre-Production Checklist', 'excerpt' => 'Everything to lock down before the cameras roll, from shot lists to talent releases and location scouting.'],
+    ['link' => '#', 'accent' => '#2BACE2', 'category' => 'Print Media', 'date' => 'May 30, 2026', 'readTime' => '5 min read', 'title' => 'Why Print Still Matters in a Digital-First World', 'excerpt' => 'Business cards, packaging and brochures still shape first impressions &mdash; here is how to make them count.'],
+    ['link' => '#', 'accent' => '#3DB54A', 'category' => 'Web &amp; Mobile Solutions', 'date' => 'May 23, 2026', 'readTime' => '9 min read', 'title' => 'Responsive Design Mistakes That Are Costing You Conversions', 'excerpt' => 'Common layout, speed and navigation pitfalls that quietly push mobile visitors away from your site.'],
 ];
 ?>
 
@@ -96,11 +96,8 @@ $blogPosts = [
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                     <?php foreach ($blogPosts as $i => $post): ?>
                     <div class="col" data-animate data-delay="<?php echo ($i % 3) * 90; ?>">
-                        <div class="tutorial-card" style="--accent:<?php echo $esc($post['accent']); ?>">
+                        <a href="<?php echo $esc($post['link']); ?>" class="tutorial-card" style="--accent:<?php echo $esc($post['accent']); ?>">
                             <div class="tutorial-card-top">
-                                <span class="tutorial-card-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><?php echo $siteData['icons'][$post['icon']]; ?></svg>
-                                </span>
                                 <span class="tutorial-category-badge"><?php echo $post['category']; ?></span>
                             </div>
                             <h6><?php echo $esc($post['title']); ?></h6>
@@ -112,8 +109,7 @@ $blogPosts = [
                                     <?php echo $esc($post['readTime']); ?>
                                 </span>
                             </div>
-                            <a href="#" class="popular-service-link">Read More <span>&rarr;</span></a>
-                        </div>
+                        </a>
                     </div>
                     <?php endforeach; ?>
                 </div>
